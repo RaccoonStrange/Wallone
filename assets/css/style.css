@@ -3,6 +3,12 @@ body {
     color: #fff;
 }
 
+aside.main {
+    float: left;
+    height: 100%;
+    position: sticky;
+}
+
 .search-field {
     background-color: #2b2b2b;
     border: 0px;
