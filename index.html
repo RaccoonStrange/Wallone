@@ -11,46 +11,22 @@
 </head>
 <body>
 
-<div class="bg-img-anime" > <!--style="background-image: url(assets/images/backimg.jpg); height: 500px; overflow: hidden; background-size: cover;"-->
-    <div class="container">
-        <div class="wrapper">
-            <span class='title'>Цвет фона</span>
-            <div class="colors_list">
-                <div class="colors white"></div>
-                <div class="colors black"></div>
+<div> <!--style="background-image: url(assets/images/backimg.jpg); height: 500px; overflow: hidden; background-size: cover;"-->
+    <div class="container d-flex">
+        <aside class="main">
+            <div class="logo d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="Логотип сайта">
+                <h3>Wallone</h3>
             </div>
-            <div class="cog">
-                <img src="assets/images/setting.svg" style="width: 30px; background-color: #000; border-radius: 50%; padding: 2px"> // Картынка
+        </aside>
+        <main>
+            <div class="content" style="margin-top: 20px; margin-bottom: 10px;" >
+                <form class="d-flex">
+                    <input class="form-control mr-2 search-field" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-        </div>
-        <div class="text"></div>
-
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <img src="" alt="">
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="content" style="margin-top: 100px; margin-bottom: 100px;" >
-            <form class="d-flex">
-                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+        </main>
     </div>
 
 </div>
