@@ -18,52 +18,69 @@
 <div> <!--style="background-image: url(assets/images/backimg.jpg); height: 500px; overflow: hidden; background-size: cover;"-->
     <div class="container d-flex">
         <aside class="main">
-            <div class="logo d-flex align-items-center">
-                <img src="assets/images/logo.png" alt="Логотип сайта">
-                <h3>Wallone</h3>
-            </div>
+            <a href="index.html">
+                <div class="logo d-flex align-items-center">
+                    <img src="assets/images/logo.png" alt="Логотип сайта">
+                    <h3>Wallone</h3>
+                </div>
+            </a>
             <div class="categories">
-                <h3>Категории</h3>
-                <div class="categ-ov">
-
+                <h3>Популярные категории</h3>
+                <div class="bl-cat">
+                    <li><a href="">Еда</a></li>
+                    <li><a href="">Цветок</a></li>
+                    <li><a href="">Тарелка</a></li>
+                    <li><a href="">Животные</a></li>
+                    <li><a href="">Тигр</a></li>
+                    <li><a href="">Дерево</a></li>
+                    <li><a href="">Машина</a></li>
                 </div>
             </div>
         </aside>
         <main>
-            <header>
-                <div class="content d-flex" style="margin-top: 20px; margin-bottom: 10px;">
-                    <div class="search">
-                        <nav class="navbar navbar-expand-lg">
-                            <div class="container-fluid">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <form class="d-flex">
-                                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="translate">
-                                <select>
-                                    <option value="">RU</option>
-                                    <option value="">ENG</option>
-                                </select>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                    Меню
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item " href="#">Авторизация</a></li>
-                                    <li><a class="dropdown-item" href="#">Регистрация</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Кнопошка</a></li>
-<!--                                    <li><a class="dropdown-item" href="#">Separated link</a></li> Аля, можно сделать для кнопки выхода  -->
-                                </ul>
-                            </div>
-                        </nav>
+            <header class="justify-content-between" style="margin-top: 20px; margin-bottom: 10px;">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="input-group mb-3 d-flex">
+                            <input class="search-inp form-control" type="search" placeholder="Поиск" aria-label="Search" aria-describedby="basic-addon2">
+                            <button class="search-btn" type="submit"><img src="assets/images/icons/search.png" alt=""></button>
+                        </form>
                     </div>
-                </div>
+                    <div class="pos-right d-flex align-items-center justify-content-between">
+                        <div class="language d-flex">
+                            <p>RU</p>
+                            <p>|</p>
+                            <p>ENG</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                RaBerryOn
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="login.html">Вход</a></li>
+                                <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </header>
+            <div class="all-images">
+                <div class="img-50">
+                    <img src="assets/images/1.png">
+                </div>
+                <div class="img-50">
+                    <img src="assets/images/1.png">
+                </div>
+                <div class="img-50">
+                    <img src="assets/images/1.png">
+                </div>
+                <div class="img-50">
+                    <img src="assets/images/1.png">
+                </div>
+            </div>
         </main>
     </div>
 
