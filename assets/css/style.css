@@ -370,7 +370,7 @@ li {
     display: flex;
     align-items: center;
     margin-left: 20px;
-    margin-bottom: 150px;
+    /*margin-bottom: 150px;*/
     width: 925px;
     min-width: 10%;
     min-height: 100%;
