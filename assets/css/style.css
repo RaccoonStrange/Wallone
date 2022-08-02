@@ -33,7 +33,7 @@ li {
 }
 
 .logo img{
-    max-width: 52px;
+    max-width: 55px;
     height: auto;
     margin-right: 15px;
     border-radius: 50%;
@@ -77,6 +77,10 @@ li {
     flex-wrap: wrap;
 }
 
+.popular-categories {
+    max-width: 200px;
+}
+
 .categ-row {
     display: flex;
     align-items: center;
@@ -92,13 +96,22 @@ li {
     font-size: 20px;
 }
 
+.active-cat p:after {
+    margin-left: 20px;
+    content: "\f060";
+    font-family: FontAwesome;
+    font-size: 22px;
+    color: #F9F0DA;
+}
+
 .messengers {
+    max-width: 350px;
     position: absolute;
     bottom: 35px;
 }
 
 .messengers img {
-    width: 40px;
+    width: 50px;
     vertical-align: top;
     margin: 5px;
 }
@@ -120,13 +133,41 @@ li {
     width: 1120px;
 }
 
-.search-input [type=search] {
-    width: 100%;
-    height: 52px;
-    padding-left: 20px;
-    padding-right: 20px;
+.form-search {
+    position: relative;
 }
 
+.search-input [type=search] {
+    width: 100%;
+    height: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2b2b2b;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    /*background: transparent;*/
+}
+
+.form-search [type=submit] {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.form-search [type=submit]:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #F9F0DA;
+}
 
 .language {
     width: 120px;
@@ -199,7 +240,7 @@ li {
     bottom: 0;
     width: 100%;
     font-size: 36px;
-    background-color: #00000097;
+    background-color: #0000009e;
     transition: 0.7s;
     z-index: 5;
 }
@@ -217,12 +258,13 @@ li {
     transition: 0.5s;
 }
 
-.info-profile {
+.info-profile a{
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 10px;
     left: 15px;
+    color: #fff;
 }
 
 .info-profile img {
@@ -231,6 +273,15 @@ li {
 /*    Сделать под мобилку, а так норм*/
 }
 
+.favourites {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.favourites img {
+    width: 25px;
+}
 
 
 /*-----------*/
@@ -268,7 +319,7 @@ li {
     /*position: fixed;*/
 }
 
-.container-login img {
+.container-login>img {
     width: 35%;
     object-fit: cover;
     object-position: bottom;
@@ -288,8 +339,8 @@ li {
 }
 
 .main-login {
-    top: 40px;
-    left: 50px;
+    /*top: 40px;*/
+    left: 35px;
     position: absolute;
     background-attachment: fixed;
 }
@@ -297,6 +348,16 @@ li {
 .main-login a {
     color: #fff;
 }
+
+/*.mes-footer {*/
+/*    max-width: 350px;*/
+/*}*/
+
+/*.mes-footer img {*/
+/*    width: 50px;*/
+/*    vertical-align: top;*/
+/*    margin: 5px;*/
+/*}*/
 
 /*input text form*/
 
@@ -312,6 +373,7 @@ li {
     margin-bottom: 150px;
     width: 925px;
     min-width: 10%;
+    min-height: 100%;
 }
 
 .login-form-input {
@@ -366,16 +428,28 @@ li {
 
 /*input submit form*/
 
-.auth-input {
+.row-input-submit {
     display: flex;
     flex-wrap: wrap;
-    max-width: 590px;
     justify-content: center;
+    max-width: 925px;
+    margin-bottom: 20px;
+}
+
+.row-input-submit-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 925px;
+}
+
+.auth-input {
+    display: flex;
+    width: 270px;
 }
 
 .auth-input input {
-    display: inline-block;
-    width: 270px;
+    width: 100%;
     height: 60px;
     color: #fff;
     font-size: 20px;
@@ -385,44 +459,80 @@ li {
     border-radius: 10px;
     transition: .5s;
     margin: 10px 10px 10px 10px;
-
 }
 
 .auth-input input:hover {
     background-color: #3492c8;
     transition: .7s;
+    cursor: pointer;
 }
 
-.auth-input a {
-    padding-top: 15px;
-    padding-bottom: 16px;
-    padding-left: 69px;
-    padding-right: 70px;
+
+.auth-or-registr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    justify-content: center;
+    text-align: center;
+}
+
+.auth-or-registr a{
+    display: flex;
+    width: 100%;
+    height: 60px;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #2b2b2b;
     border: 1px solid #3492c8;
     outline: none;
     border-radius: 10px;
     transition: .5s;
     margin: 10px 10px 10px 10px;
-    text-align: center;
-    min-width: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
-.auth-input a:hover {
+.auth-or-registr a:hover {
     background-color: #3492c8;
     transition: .7s;
 }
 
-.login-inp {
-    margin-right: 20px;
-}
-
-.register-inp {
-    margin-right: 20px;
+.reset-password {
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    justify-content: center;
     text-align: center;
 }
+
+.reset-password a{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #2b2b2b;
+    border: 1px solid #3492c8;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-password a:hover {
+    background-color: #3492c8;
+    transition: .7s;
+}
+
+/*.login-inp {*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.register-inp {*/
+/*    margin-right: 20px;*/
+/*}*/
 
 .h1-text {
     text-align: center;
@@ -446,8 +556,9 @@ li {
         justify-content: center;
     }
 
-    .container-login img {
+    .container-login>img {
         width: 0px;
+        height: 100vh;
     }
 
     .main-login {
