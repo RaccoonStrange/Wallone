@@ -347,6 +347,23 @@ li {
     margin: 0;
 }
 
+.row-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.row-checkbox input {
+    border: 0px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: #2b2b2b;
+}
+
+.checkbox {
+    background-color: #2b2b2b;
+}
+
 /*input submit form*/
 
 .auth-input {
@@ -405,6 +422,12 @@ li {
 .register-inp {
     margin-right: 20px;
     text-align: center;
+}
+
+.h1-text {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
 }
 
 /*@media (max-width: 1400px) and (min-width: ) {*/
