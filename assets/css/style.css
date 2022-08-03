@@ -104,6 +104,10 @@ li {
 
 .categ-row p {
     font-size: 20px;
+    font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .active-cat p:after {
@@ -628,6 +632,10 @@ li {
 
 .post-category-row p {
     font-size: 16px;
+    font-style: normal;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .post-category-num {
