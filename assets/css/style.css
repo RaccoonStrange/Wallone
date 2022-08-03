@@ -70,6 +70,10 @@ li {
     /*position: fixed;*/
 }
 
+/*.content {*/
+/*    width: 1490px;*/
+/*}*/
+
 .logo-menu {
     /*width: 170px;*/
     /*display: flex;*/
@@ -78,7 +82,13 @@ li {
 }
 
 .popular-categories {
-    max-width: 200px;
+    max-width: 250px;
+}
+
+.popular-categories h3{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .categ-row {
@@ -245,6 +255,11 @@ li {
     z-index: 5;
 }
 
+.active-hover-image {
+    background-color: #d9d9d9;
+    opacity: 1;
+}
+
 .info-profile img {
     width: 26px;
 }
@@ -281,6 +296,14 @@ li {
 
 .favourites img {
     width: 25px;
+}
+
+.line-d9 {
+    background-color: #d9d9d9;
+    width: 1500px;
+    height: 125px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 
@@ -540,10 +563,114 @@ li {
     font-size: 36px;
 }
 
-/*@media (max-width: 1400px) and (min-width: ) {*/
+.h2-text {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 32px;
+}
 
-/*}*/
+/*----single---*/
 
+.more-info-hover-image {
+    /*width: 1500px;*/
+    display: flex;
+
+}
+
+.more-info-left-block-img {
+    max-width: 760px;
+    margin-right: 20px;
+}
+
+.more-info-left-block-img img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.more-info-right-block-img {
+    width: 700px;
+}
+
+.more-info-right-block-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.more-category-post {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.more-category-post-left {
+    /*display: flex;*/
+    width: 350px;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.post-category-row {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    /*margin-bottom: 15px;*/
+}
+
+.post-category-row img {
+    width: 21px;
+    margin: 0px 5px 0 0px;
+}
+
+.post-category-row p {
+    font-size: 16px;
+}
+
+.post-category-num {
+    margin-left: 15px;
+}
+
+.author-post-image {
+    margin-bottom: 45px;
+}
+
+.submit-post-image {
+    /*display: flex;*/
+    background-color: #272222;
+    padding: 10px;
+    width: 720px;
+    height: 100px;
+    position: absolute;
+}
+
+.submit-post-image input{
+    height: 45px;
+}
+
+.submit-post-image p{
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+}
+
+.submit-post-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-post-input-left {
+    display: flex;
+}
+
+.submit-post-input-right {
+    display: flex;
+}
+
+.text-post-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------------*/
 @media screen and (max-width: 1500px) {
     .row input {
 
