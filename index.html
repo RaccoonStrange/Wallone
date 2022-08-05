@@ -5,8 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="assets/css/style.css">
+
 <!--    <script src="assets/js/bootstrap.min.js"></script>-->
 <!--    <script src="assets/js/bootstrap.bundle.min.js"></script>-->
     <script src="assets/js/theme.js"></script>
@@ -28,24 +30,48 @@
             </a>
             <div class="popular-categories">
                 <div class="column">
-                    <div class="categ-row">
-                        <img src="assets/images/logo.png">
-                        <p>Автомобили</p>
-                    </div>
-                    <div class="categ-row">
-                        <img src="assets/images/logo.png">
-                        <p>Кошки</p>
-                    </div>
-                    <div class="categ-row active-cat">
-                        <img src="assets/images/logo.png">
-                        <p>Аниме</p>
-                    </div>
-                    <div class="categ-row">
-                        <img src="assets/images/logo.png">
-                        <p>Машины</p>
-                    </div>
+                    <nav>
+                        <input type="checkbox" name="menu" id="btn-menu">
+                        <label class="dropdown-label" for="btn-menu">Популярные категории</label>
+                        <ul class="ul-category">
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png">
+                                    <p>Автомобили</p>
+                                </a>
+                            </li>
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png">
+                                    <p>Кошки</p>
+                                </a>
+                            </li>
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png">
+                                    <p>Аниме</p>
+                                </a>
+                            </li>
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png">
+                                    <p>Машины</p>
+                                </a>
+                            </li>
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png">
+                                    <p>Лето</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
+        </div>
+
+        <div class="advertisement">
+            <a href="https://www.twitch.tv/monstor109"><img src="assets/images/advertisement.jpg" alt="Реклама на сайте"></a>
         </div>
 
         <div class="footer-left-menu">
@@ -59,6 +85,7 @@
                 <p>Новости проекта:</p>
                 <a href="https://vk.com"><img src="assets/images/icons/vk.svg"></a>
                 <a href="https://t.me/+QDWFgmYGcrw5MDg6"><img src="assets/images/icons/telegram.svg"></a>
+                <a href="https://t.me/+QDWFgmYGcrw5MDg6"><img src="assets/images/icons/telegram.svg"></a>
             </div>
         </div>
     </div>
@@ -69,16 +96,22 @@
                     <input type="search" placeholder="Поиск">
                     <button type="submit"></button>
                 </form>
+                <div class="tags">
+                    <p>#Popular</p>
+                    <p>#Oldest</p>
+                </div>
             </div>
-            <div class="language">
-                <h1>RU</h1>
-                <h1 class="lang-stick">|</h1>
-                <h1>END</h1>
-            </div>
-            <div class="profile">
-                <img src="assets/images/UserName.png">
-                <h1>UserName</h1>
-                <!--            Нужно вставить выпадающий список-->
+            <div class="header-right">
+                <div class="language">
+                    <h1>RU</h1>
+                    <h1 class="lang-stick">|</h1>
+                    <h1>END</h1>
+                </div>
+                <div class="profile">
+                    <img src="assets/images/UserName.png">
+                    <h2>Профиль</h2>
+                    <!--            Нужно вставить выпадающий список-->
+                </div>
             </div>
         </div>
         <div class="images">
@@ -773,36 +806,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="hover-image">
-                    <img class="hover-img" src="assets/images/anime/3.jpg">
-                    <div class="info">
-                        <div class="favourites">
-                            <img src="assets/images/icons/star-favourites.svg">
-                        </div>
-                        <p>One Day</p>
-                        <div class="info-profile">
-                            <a href="profile.html">
-                                <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hover-image">
-                    <img class="hover-img" src="assets/images/anime/4.jpg">
-                    <div class="info">
-                        <div class="favourites">
-                            <img src="assets/images/icons/star-favourites.svg">
-                        </div>
-                        <p>One Day</p>
-                        <div class="info-profile">
-                            <a href="profile.html">
-                                <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -814,6 +817,23 @@
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>-->
 <script src="assets/js/infinite-scrolling.js"></script>
 <script src="assets/js/btn_up-down.js"></script>
+<script src="assets/js/dropdown.js"></script>
 <script src="https://kit.fontawesome.com/a5a9f64acd.js" crossorigin="anonymous"></script>
+
+<script>
+    const hidetxt = ($btn) => {
+        const $i = $btn.querySelector(`i`);
+
+        $i.classList.toggle(`dropdown-label-down`);
+        $i.classList.toggle(`dropdown-label-up`);
+    }
+
+    const hidetxta = ($btn) => {
+        const $i = $btn.querySelector(`i`);
+
+        $i.classList.toggle(`icon-down-open-big`);
+        $i.classList.toggle(`icon-up-open-big`);
+    }
+</script>
 </body>
 </html>
