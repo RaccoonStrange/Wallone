@@ -9,6 +9,12 @@ h1, h2, h4, h5, p, a, label, input {
 
 a {
     text-decoration: none;
+    color: #DDDDDD;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 li {
