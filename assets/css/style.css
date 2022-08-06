@@ -876,6 +876,70 @@ i.icon-up-open-big:after {
 }
 /*-----------------*/
 
+/*Политика конфиденциальности*/
+
+.privacy-policy-block {
+    width: 1500px;
+}
+
+.privacy-policy {
+    width: 1200px;
+    margin: 0 auto;
+    /*color: #000;*/
+    /*background-color: #fff;*/
+    /*padding: 20px;*/
+}
+
+.privacy-policy-points {
+    margin-bottom: 50px;
+}
+
+.privacy-policy-points p {
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+
+.points-p {
+    margin-bottom: 25px;
+}
+
+.points-p p {
+    margin-bottom: 5px;
+}
+
+.h1-policy {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.p-policy {
+    margin-bottom: 45px;
+}
+
+.h2-policy {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.h3-policy {
+    margin-bottom: 35px;
+}
+
+/*---------------------------*/
+
+/*О нас*/
+
+.about-us-block {
+    width: 1500px;
+}
+
+.h1-about-us {
+    text-align: center;
+}
+
+/*-----*/
+
 @media screen and (max-width: 1850px) {
     .container {
         display: grid;
