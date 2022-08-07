@@ -19,59 +19,72 @@
         <div class="logo-menu">
             <a href="index.html">
                 <div class="logo">
-                    <img src="assets/images/logo.png" alt="Логотип сайта">
+                    <img src="assets/images/logo.png" alt="category" loading="lazy">
                     <div class="logo-text">
                         <h3>Wallone</h3>
-                        <p>#someday</p>
+                        <a href="#">#someday</a>
                     </div>
                 </div>
             </a>
-            <div class="you-categories">
-                <div class="column">
-                    <div class="categ-row active-cat">
-                        <a href=""><p>Ваши изображения</p></a>
-                    </div>
-                    <div class="categ-row">
-                        <a href=""><p>Коллекция</p></a>
-                    </div>
-                    <div class="categ-row">
-                        <a href=""><p>Избранные / Закладки</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="popular-categories">
+            <div class="categories">
                 <div class="column">
                     <nav>
-                        <input type="checkbox" name="menu" id="btn-menu">
-                        <label class="dropdown-label" for="btn-menu">Популярные категории</label>
+                        <input type="checkbox" name="menu" id="btn-menu1">
+                        <label class="dropdown-label" for="btn-menu1">Основное</label>
                         <ul class="ul-category">
                             <li class="categ-row">
                                 <a href="#">
-                                    <img src="assets/images/logo.png">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
+                                    <p>Ваши изображения</p>
+                                </a>
+                            </li>
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
+                                    <p>Коллекция</p>
+                                </a>
+                            </li>
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
+                                    <p>Избранные</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="column">
+                    <nav>
+                        <input type="checkbox" name="menu" id="btn-menu">
+                        <label class="dropdown-label" for="btn-menu">Категории</label>
+                        <ul class="ul-category">
+                            <li class="categ-row">
+                                <a href="#">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
                                     <p>Автомобили</p>
                                 </a>
                             </li>
                             <li class="categ-row">
                                 <a href="#">
-                                    <img src="assets/images/logo.png">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
                                     <p>Кошки</p>
                                 </a>
                             </li>
                             <li class="categ-row">
                                 <a href="#">
-                                    <img src="assets/images/logo.png">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
                                     <p>Аниме</p>
                                 </a>
                             </li>
                             <li class="categ-row">
                                 <a href="#">
-                                    <img src="assets/images/logo.png">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
                                     <p>Машины</p>
                                 </a>
                             </li>
                             <li class="categ-row">
                                 <a href="#">
-                                    <img src="assets/images/logo.png">
+                                    <img src="assets/images/logo.png" alt="category" loading="lazy">
                                     <p>Лето</p>
                                 </a>
                             </li>
@@ -83,15 +96,16 @@
 
         <div class="footer-left-menu">
             <div class="site-information">
-                <p><a href="">О сайте</a></p>
+                <p><a href="about_us.html">О сайте</a></p>
                 <p><a href="">Связаться с нами</a></p>
-                <p><a href="">Политика конфиденциальности</a></p>
+                <p><a href="privacy_policy.html">Политика конфиденциальности</a></p>
 
             </div>
             <div class="messenger">
                 <p>Новости проекта:</p>
-                <a href="https://vk.com"><img src="assets/images/icons/vk.svg"></a>
-                <a href="https://t.me/+QDWFgmYGcrw5MDg6"><img src="assets/images/icons/telegram.svg"></a>
+                <a href="https://vk.com"><img src="assets/images/icons/vk.svg" alt="vk"></a>
+                <a href="https://t.me/+QDWFgmYGcrw5MDg6"><img src="assets/images/icons/telegram.svg" alt="telegram"></a>
+                <a href="https://t.me/+QDWFgmYGcrw5MDg6"><img src="assets/images/icons/telegram.svg" alt="telegram"></a>
             </div>
         </div>
     </div>
@@ -99,24 +113,25 @@
         <div class="header-main">
             <div class="search-input">
                 <form class="form-search" action="">
-                    <input type="search" placeholder="Поиск">
+                    <label for="search" hidden></label>
+                    <input type="search" placeholder="Поиск" id="search">
                     <button type="submit"></button>
                 </form>
                 <div class="tags">
-                    <p>#Popular</p>
-                    <p>#Oldest</p>
+                    <a href="#">#Popular</a>
+                    <a href="#">#Oldest</a>
                 </div>
             </div>
             <div class="header-right">
                 <div class="language">
-                    <h1>RU</h1>
-                    <h1 class="lang-stick">|</h1>
-                    <h1>END</h1>
+                    <a href="/ru">RU</a>
+                    <p class="lang-stick">|</p>
+                    <a href="/en">END</a>
                 </div>
                 <div class="profile">
-                    <img src="assets/images/logo-user.png">
-                    <h1>RaBerryOn</h1>
-                    <!--            Нужно вставить выпадающий список-->
+                    <img src="assets/images/UserName.png" alt="user-icon">
+                    <h2>Профиль</h2>
+                    <!--            TODO: Нужно вставить выпадающий список-->
                 </div>
             </div>
         </div>
@@ -145,7 +160,7 @@
                 <div class="hover-image">
                     <img class="hover-img" src="assets/images/anime/1.png">
                     <div class="info">
-                        <div class="favourites">
+                        <div class="item-icons">
                             <img src="assets/images/icons/star-favourites.svg">
                         </div>
                         <p>One Day</p>
@@ -164,7 +179,7 @@
                 <div class="hover-image">
                     <img class="hover-img" src="assets/images/anime/2.jpg">
                     <div class="info">
-                        <div class="favourites">
+                        <div class="item-icons">
                             <img src="assets/images/icons/star-favourites.svg">
                         </div>
                         <p>One Day</p>
@@ -183,7 +198,7 @@
                 <div class="hover-image">
                     <img class="hover-img" src="assets/images/anime/3.jpg">
                     <div class="info">
-                        <div class="favourites">
+                        <div class="item-icons">
                             <img src="assets/images/icons/star-favourites.svg">
                         </div>
                         <p>One Day</p>
@@ -202,7 +217,7 @@
                 <div class="hover-image">
                     <img class="hover-img" src="assets/images/anime/4.jpg">
                     <div class="info">
-                        <div class="favourites">
+                        <div class="item-icons">
                             <img src="assets/images/icons/star-favourites.svg">
                         </div>
                         <p>One Day</p>
@@ -221,7 +236,7 @@
                 <div class="hover-image">
                     <img class="hover-img" src="assets/images/anime/5.jpg">
                     <div class="info">
-                        <div class="favourites">
+                        <div class="item-icons">
                             <img src="assets/images/icons/star-favourites.svg">
                         </div>
                         <p>One Day</p>
@@ -240,7 +255,7 @@
                 <div class="hover-image">
                     <img class="hover-img" src="assets/images/anime/6.jpg">
                     <div class="info">
-                        <div class="favourites">
+                        <div class="item-icons">
                             <img src="assets/images/icons/star-favourites.svg">
                         </div>
                         <p>One Day</p>

@@ -74,22 +74,29 @@ li {
     position: fixed;
 }
 
-.popular-categories {
+.categories {
     max-width: 250px;
     margin-top: 30px;
 }
 
-.popular-categories a {
-    color: #fff;
+.categories a {
+    color: #DDDDDD;
 }
 
-.popular-categories ul {
+.categories a:hover {
+    color: #FFFFFF;
+}
+
+.categories ul {
     width: 200px;
 }
 
-.popular-categories label{
-    font-size: 22px;
+.categories label{
+
+    font-style: normal;
     font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
     color: #fff;
 }
 
@@ -109,29 +116,28 @@ li {
 }
 
 .categ-row a p {
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 23px;
     font-family: "Roboto",sans-serif;
-    color: #fff;
 }
 
-.popular-categories nav li{
+.categories nav li{
     display: inline-block;
     vertical-align: top;
 }
-.popular-categories nav a{
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid transparent;
-    transition: 0.3s;
-}
-.popular-categories nav a:hover{
-    border: 1px solid #fff;
+/*.popular-categories nav a{*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    border: 1px solid transparent;*/
+/*    transition: 0.3s;*/
+/*}*/
+.categories nav a:hover{
+    /*border: 1px solid #fff;*/
 }
 
-.popular-categories input[type="checkbox"] {
+.categories input[type="checkbox"] {
     display: none;
 }
 
@@ -147,16 +153,10 @@ li {
     width: 310px;
     position: fixed;
     bottom: 35px;
-}
 
-.advertisement {
-    width: 200px;
-    position: fixed;
-    bottom: 200px;
-}
-
-.advertisement img {
-    width: 200px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .site-information p {
@@ -165,6 +165,10 @@ li {
 
 .site-information a{
     color: #3492C8;
+}
+
+.site-information a:hover{
+    color: rgba(52, 146, 200, 0.8);
 }
 
 .messenger {
@@ -199,7 +203,6 @@ li {
 }
 
 .search-input {
-
     width: 1120px;
 }
 
@@ -222,10 +225,15 @@ li {
     position: absolute;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.tags p {
-    margin-right: 10px;
+.tags a {
+    margin: 2px;
 }
 
 .user-image-search-input {
@@ -275,14 +283,15 @@ li {
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .lang-stick {
     margin: 0 10px 0 10px;
-}
-
-.language h1 {
-    font-size: 22px;
 }
 
 .profile {
@@ -361,6 +370,10 @@ li {
     margin-bottom: 20px;
 }
 
+.hover-image a{
+color: #FFFFFF;;
+}
+
 .hover-image img {
     display: block;
     position: relative;
@@ -382,6 +395,10 @@ li {
     background-color: #0000009e;
     transition: 0.7s;
     z-index: 5;
+}
+
+.info p{
+    text-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
 }
 
 .active-hover-image {
@@ -432,14 +449,10 @@ li {
     margin-right: 15px;
 }
 
-.favourites {
+.item-icons {
     position: absolute;
     top: 10px;
     left: 15px;
-}
-
-.favourites img {
-    width: 25px;
 }
 
 .line-d9 {
@@ -955,15 +968,6 @@ i.icon-up-open-big:after {
         position: initial;
     }
 
-    .footer-left-menu {
-        position: initial;
-    }
-
-    .advertisement {
-        position: initial;
-        margin-bottom: 20px;
-    }
-
     .header-right {
         display: flex;
         width: 380px;
@@ -977,19 +981,19 @@ i.icon-up-open-big:after {
         color: #fff;
     }
 
-    .popular-categories {
+    .categories {
         margin-bottom: 20px;
     }
 
-    .popular-categories nav label {
+    .categories nav label {
         cursor: pointer;
     }
 
-    .popular-categories nav label{
+    .categories nav label{
         display: inline-block;
     }
 
-    .popular-categories nav > ul {
+    .categories nav > ul {
         display: none;
     }
 
