@@ -3,7 +3,7 @@ body {
     color: #fff;
 }
 
-h1, h2, h4, h5, p, a, label, input {
+h1, h2, h3, h4, h5, p, a, label, input {
     font-family: "Roboto", sans-serif;
 }
 
@@ -38,8 +38,11 @@ li {
 }
 
 .logo h3{
-    font-family: "Roboto",sans-serif, sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 22px;
+    line-height: 27px;
     color: #fff;
 }
 
@@ -526,6 +529,10 @@ color: #FFFFFF;;
 }
 
 .main-login a {
+    color: #DDDDDD;
+}
+
+.main-login a:hover{
     color: #fff;
 }
 
@@ -568,10 +575,14 @@ color: #FFFFFF;;
     margin-bottom: 20px;
 }
 
-.row label{
+.row label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
     margin-bottom: 5px;
     display: flex;
-    font-size: 22px;
     min-width: 100px;
 }
 
@@ -603,7 +614,32 @@ color: #FFFFFF;;
 }
 
 .checkbox {
-    background-color: #2b2b2b;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    background: #2B2B2B no-repeat center center;
+    background-size: 50% 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.checkbox:checked+label::before {
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 14'%3e%3cpath fill='white' d='M6.1136 13.725L0.263593 7.62349C-0.0878643 7.25692 -0.0878643 6.66256 0.263593 6.29596L1.53636 4.96843C1.88781 4.60182 2.4577 4.60182 2.80915 4.96843L6.75 9.07869L15.1908 0.274927C15.5423 -0.0916425 16.1122 -0.0916425 16.4636 0.274927L17.7364 1.60246C18.0879 1.96903 18.0879 2.56338 17.7364 2.92998L7.3864 13.7251C7.0349 14.0916 6.46506 14.0916 6.1136 13.725Z'/%3e%3c/svg%3e");
 }
 
 /*input submit form*/
@@ -719,10 +755,14 @@ color: #FFFFFF;;
 /*    margin-right: 20px;*/
 /*}*/
 
-.h1-text {
+.heading {
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+
     text-align: center;
     margin-bottom: 50px;
-    font-size: 36px;
 }
 
 .h2-text {
