@@ -69,7 +69,7 @@ li {
     height: 100vh;
 }
 
-.logo-menu {
+.menu {
     /*width: 170px;*/
     /*display: flex;*/
     /*justify-content: center;*/
@@ -223,8 +223,14 @@ li {
     border-radius: 10px;
 }
 
-.tags {
+.grid
+{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tags {
     position: absolute;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1004,7 +1010,7 @@ i.icon-up-open-big:after {
         height: 100%;
     }
 
-    .logo-menu {
+    .menu {
         position: initial;
     }
 
@@ -1142,7 +1148,7 @@ i.icon-up-open-big:after {
 
     .user-images-panel a {
         margin-bottom: 20px;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .user-img-search-sort {
