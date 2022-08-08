@@ -1186,7 +1186,7 @@ i.icon-up-open-big:after {
     }
 
     .header-main {
-        margin-top: 100px;
+        margin-top: 30px;
         flex-direction: column-reverse;
         width: 360px;
         /*margin-bottom: 70px;*/
@@ -1227,7 +1227,7 @@ i.icon-up-open-big:after {
     }
 
     .header-main {
-        margin-top: 100px;
+        margin-top: 30px;
         flex-direction: column-reverse;
         width: 300px;
         /*margin-bottom: 70px;*/
