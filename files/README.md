@@ -5,3 +5,6 @@
 ### Fonts:
 1. Fredoka - бренд
 2. Roboto - основной текст
+
+## Icons
+1. Использовать как icon-{filename}
