@@ -242,8 +242,32 @@
                                 <input class="input-like" type="submit" value="">
                             </div>
                             <div class="submit-post-input-right">
-                                <input class="input-add_collection" type="submit" value="Добавить в коллекцию">
-                                <input class="input-star" type="submit" value="">
+                                <a class="input-add_collection" href="#openModal">Добавить в коллекцию</a>
+                                <div id="openModal" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Закрыть" class="close">x</a>
+                                        <h2 class="h2-collection">Коллекции</h2>
+                                        <form action="">
+                                            <div class="collection-row">
+                                                <label for="">Создайте коллекцию</label>
+                                                <input type="text" placeholder="Машины">
+                                            </div>
+                                            <div class="collection-row">
+                                                <label for="">Выберите необходимую коллекцию</label>
+                                                <select name="" id="">
+                                                    <option value="">Кошки</option>
+                                                    <option value="">Аниме</option>
+                                                    <option value="">Природа</option>
+                                                </select>
+                                            </div>
+                                            <small>Добавляйте тему в уже созданную коллекцию или создайте новую</small>
+                                            <div class="input-select">
+                                                <input type="submit" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <input class="input-star" type="submit" value="">
                             </div>
                         </div>
                         <div class="text-post-image">
@@ -730,5 +754,6 @@
 <script src="assets/js/onclick.js"></script>
 <script src="assets/js/btn_up-down.js"></script>
 <script src="https://kit.fontawesome.com/a5a9f64acd.js" crossorigin="anonymous"></script>
+<script src="assets/js/close_scroll.js"></script>
 </body>
 </html>

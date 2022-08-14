@@ -1165,6 +1165,113 @@ i.icon-up-open-big:after {
 
 /*--------------------*/
 
+
+/*Модальное окно*/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog small {
+    font-size: 16px;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 670px;
+    height: 405px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #1e1e1e;
+
+}
+
+.close {
+    color: #FFFFFF;
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    top: 15px;
+    text-decoration: none;
+    /*border: 1px solid #3492C8;*/
+    font-size: 24px;
+}
+
+.h2-collection {
+    margin-bottom: 40px;
+}
+
+.collection-row {
+    margin-bottom: 25px;
+}
+
+.collection-row label {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.collection-row input {
+    width: 630px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2B2B2B;
+    border: 1px solid #3492C8;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.collection-row select {
+    width: 630px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2B2B2B;
+    border: 1px solid #3492C8;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-select input {
+    position: absolute;
+    width: 75px;
+    height: 45px;
+    right: 25px;
+    bottom: 15px;
+    border-radius: 10px;
+    background-color: #2B2B2B;
+    border: 1px solid #3492C8;
+    transition: .3s;
+    color: #fff;
+}
+
+.input-select input:hover {
+    background-color: #3492C8;
+    transition: .5s;
+}
+
+/*--------------*/
+
 @media screen and (max-width: 1850px) {
     .container {
         display: grid;
