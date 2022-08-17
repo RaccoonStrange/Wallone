@@ -205,7 +205,7 @@ li {
     display: flex;
     width: 380px;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .search-input {
@@ -774,10 +774,17 @@ li {
     margin-bottom: 50px;
 }
 
-.h2-text {
-    margin-top: 50px;
-    margin-bottom: 45px;
+.h2-single-text {
+    margin-top: 20px;
+    margin-bottom: 70px;
     text-align: center;
+    font-size: 32px;
+}
+
+.h2-your-images-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 32px;
 }
 
@@ -972,6 +979,7 @@ i.icon-up-open-big:after {
 
 .h1-policy {
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -997,14 +1005,112 @@ i.icon-up-open-big:after {
 }
 
 .h1-about-us {
+    margin-top: 20px;
     text-align: center;
 }
 
 /*-----*/
 
+/*Обратная связь*/
+
+.feedback-block {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.h1-feedback {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.feedback-form-block {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-row {
+    width: 740px;
+    margin-bottom: 30px;
+}
+
+.feedback-row input {
+    width: 740px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2B2B2B;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.feedback-row input:focus {
+    border: 1px solid #3492C8;
+}
+
+.feedback-row textarea {
+    max-width: 740px;
+    min-width: 740px;
+    max-height: 180px;
+    min-height: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2B2B2B;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.feedback-row textarea:focus {
+    border: 1px solid #3492C8;
+}
+
+.feedback-row label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.feedback-row small {
+    font-size: 14px;
+}
+
+.feedback-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.feedback-input input {
+    width: 290px;
+    height: 60px;
+    color: #fff;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 1px solid #3492C8;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.feedback-input input:hover {
+    background-color: #3492C8;
+    transition: .5s;
+}
+
+/*--------------*/
+
 /*Создание изображения*/
 
 .h1-create-image {
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -1357,7 +1463,7 @@ i.icon-up-open-big:after {
     }
 
     .images {
-        width: 1110px;
+        width: 1120px;
     }
 
     .user-images-panel a {
@@ -1368,6 +1474,10 @@ i.icon-up-open-big:after {
 
     .user-images-search select {
         margin-right: 20px;
+    }
+
+    .feedback-block {
+        width: 1120px;
     }
 }
 
@@ -1422,6 +1532,7 @@ i.icon-up-open-big:after {
         width: 380px;
         display: flex;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .images {
@@ -1447,6 +1558,10 @@ i.icon-up-open-big:after {
 
     .user-img-search-sort {
         margin-bottom: 20px;
+    }
+
+    .feedback-block {
+        width: 740px;
     }
 }
 
@@ -1480,6 +1595,7 @@ i.icon-up-open-big:after {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        padding-bottom: 0px;
     }
 
     .user-image-search-input {
@@ -1488,6 +1604,27 @@ i.icon-up-open-big:after {
 
     .user-images-panel {
         width: 360px;
+    }
+
+    .feedback-block {
+        width: 360px;
+    }
+
+    .feedback-row {
+        width: 100%;
+    }
+
+    .feedback-form-block {
+        width: 360px;
+    }
+
+    .feedback-row input {
+        width: 360px;
+    }
+
+    .feedback-row textarea {
+        max-width: 360px;
+        min-width: 360px;
     }
 }
 
@@ -1532,6 +1669,27 @@ i.icon-up-open-big:after {
 
     .user-images-panel {
         width: 300px;
+    }
+
+    .feedback-block {
+        width: 300px;
+    }
+
+    .feedback-row {
+        width: 100%;
+    }
+
+    .feedback-form-block {
+        width: 300px;
+    }
+
+    .feedback-row input {
+        width: 300px;
+    }
+
+    .feedback-row textarea {
+        max-width: 300px;
+        min-width: 300px;
     }
 }
 
