@@ -80,6 +80,7 @@ li {
 .categories {
     width: 300px;
     margin-top: 30px;
+    margin-left: 40px;
 }
 
 .categories a {
@@ -158,6 +159,7 @@ li {
 
 .footer-left-menu {
     width: 310px;
+    margin-left: 10px;
     position: fixed;
     bottom: 35px;
 
