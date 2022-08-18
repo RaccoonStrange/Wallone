@@ -1038,14 +1038,14 @@ i.icon-up-open-big:after {
 .feedback-row input {
     width: 740px;
     height: 40px;
-    padding: 10px;
+    padding: 0px 20px 0px 20px;
     border-radius: 10px;
-    border: none;
     outline: none;
     background-color: #2B2B2B;
     color: #fff;
     font-size: 16px;
     margin-bottom: 2px;
+    border: 1px solid #9E9E9E;
 }
 
 .feedback-row input:focus {
@@ -1057,9 +1057,9 @@ i.icon-up-open-big:after {
     min-width: 740px;
     max-height: 180px;
     min-height: 180px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #9E9E9E;
     outline: none;
     background-color: #2B2B2B;
     color: #fff;
@@ -1377,6 +1377,36 @@ i.icon-up-open-big:after {
 }
 
 /*--------------*/
+
+/*Status code*/
+
+.status-code-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1120px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.status-code-block img {
+    width: 1120px;
+    margin-bottom: 50px;
+}
+
+.status-code-block a {
+    color: #3492C8;
+}
+
+.status-code-block a:hover {
+    border-bottom: 1px solid #3492C8;
+}
+
+.text-status-code {
+    text-align: center;
+    font-size: 32px;
+}
+
+/*-----------*/
 
 @media screen and (max-width: 1850px) {
     .container {
