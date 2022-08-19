@@ -152,7 +152,7 @@ li {
 .active-cat p:after {
     margin-left: 20px;
     content: "\f060";
-    font-family: FontAwesome;
+    font-family: FontAwesome, ui-serif;
     font-size: 22px;
     color: #F9F0DA;
 }
@@ -287,7 +287,7 @@ li {
 
 .form-search [type=submit]:before {
     content: "\f002";
-    font-family: FontAwesome;
+    font-family: FontAwesome, ui-serif;
     font-size: 20px;
     color: #F9F0DA;
 }
@@ -838,7 +838,7 @@ li {
 
 .post-category-row img {
     width: 21px;
-    margin: 0px 5px 0 0px;
+    margin: 0 5px 0 0;
 }
 
 .post-category-row p {
@@ -1040,7 +1040,7 @@ i.icon-up-open-big:after {
 .feedback-row input {
     width: 740px;
     height: 40px;
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px 0 20px;
     border-radius: 10px;
     outline: none;
     background-color: #2B2B2B;
@@ -1132,7 +1132,7 @@ i.icon-up-open-big:after {
     background: #2B2B2B;
     color: #fff;
     border: none;
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px 0 20px;
     font-size: 16px;
     outline: none;
     margin-top: 2px;
@@ -1151,7 +1151,7 @@ i.icon-up-open-big:after {
     background: #2B2B2B;
     color: #fff;
     border: none;
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px 0 20px;
     font-size: 16px;
     outline: none;
     margin-top: 2px;
@@ -1437,7 +1437,7 @@ i.icon-up-open-big:after {
     .dropdown-label:after {
         margin-left: 10px;
         content: '\f078';
-        font-family: FontAwesome;
+        font-family: FontAwesome, ui-serif;
         color: #fff;
     }
 
@@ -1627,7 +1627,7 @@ i.icon-up-open-big:after {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .user-image-search-input {
