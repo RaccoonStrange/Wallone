@@ -3,7 +3,7 @@ body {
     color: #fff;
 }
 
-h1, h2, h3, h4, h5, p, a, label, input {
+h1, h2, h3, h4, h5, p, a, label, input, small{
     font-family: "Roboto", sans-serif;
 }
 
@@ -1564,7 +1564,7 @@ i.icon-up-open-big:after {
         width: 380px;
         display: flex;
         align-items: center;
-        padding-bottom: 20px;
+        margin-bottom: 70px;
     }
 
     .images {
@@ -1723,12 +1723,4 @@ i.icon-up-open-big:after {
         max-width: 300px;
         min-width: 300px;
     }
-}
-
-
-.test-icon
-{
-    width: 25px;
-    height: 25px;
-    fill: #8C8A8C;
 }
