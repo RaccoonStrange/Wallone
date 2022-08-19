@@ -1560,8 +1560,10 @@ i.icon-up-open-big:after {
     .left-menu
     {
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
+        margin-top: 0;
+        width: 100%;
     }
 
     .logo{
@@ -1601,6 +1603,10 @@ i.icon-up-open-big:after {
         display: flex;
         top: 0;
         z-index: 2;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
     }
     ul
     {
