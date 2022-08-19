@@ -191,12 +191,12 @@
             <div class="create-image-four-blocks">
                 <div class="row-create-image">
                     <div class="block-image-input-select">
-                        <label for="name">Название</label>
+                        <label for="name" class="block-image-label">Название</label>
                         <input type="text" id="name" placeholder="Название" required>
                         <small class="create-image-error-text">Название темы уже существует, придумайте новое название</small>
                     </div>
                     <div class="block-image-input-select">
-                        <label for="categories">Категории</label>
+                        <label for="categories" class="block-image-label">Категории</label>
                         <select name="categories" id="categories" required>
                             <option value="">Персонажи</option>
                             <option value="">Природа</option>
@@ -207,20 +207,22 @@
                 </div>
                 <div class="row-create-image">
                     <div class="block-image-input-select">
-                        <label for="description">Описание</label>
+                        <label for="description" class="block-image-label">Описание</label>
                         <textarea name="description" id="description" placeholder="Описание темы" required></textarea>
                         <small class="create-image-active-text">Активное поле Обязательное поле 2px сверху</small>
                     </div>
                     <div class="block-image-input-select">
-                        <label for="tag">Теги</label>
-                        <input type="text" id="tag" placeholder="Погода, солнечно">
+                        <label for="tags" class="block-image-label">Теги</label>
+                        <input type="text" id="tags" placeholder="Погода, солнечно">
                         <small class="create-image-text">Не обязательное поле</small>
                         <div class="block-image-checkbox">
                             <div class="block-image-checkbox-input">
                                 <input class="checkbox" type="checkbox" id="author">
-                                <label for="author">Являюсь автором изображений</label>
+                                <label for="author" class="block-image-checkbox-label">Являюсь автором изображений</label>
                             </div>
-                            <small>Установите галочку только в том случае, если изображения сделаны вами. Не обязательно</small>
+                            <div class="mt-1">
+                                <small>Установите галочку только в том случае, если изображения сделаны вами. Не обязательно</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +237,9 @@
                                 <img class="add-hover-img" src="assets/images/anime/6.jpg" alt="">
                                 <div class="add-info-image">
                                     <div class="user-setting-image">
-                                        <img class="input-delete" src="assets/images/icons/delete.png" alt="">
+                                        <svg class="user-icon-remove">
+                                            <use xlink:href="assets/images/icons.svg#icon-x"></use>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
