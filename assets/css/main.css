@@ -366,7 +366,7 @@ li {
 .user-images-panel a {
     color: #fff;
     font-size: 20px;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .user-images-search {
@@ -387,6 +387,15 @@ li {
     border: none;
     font-size: 14px;
     margin-top: 1px;
+}
+
+.user-image-name-collection {
+    margin: 40px 0px 20px 0px;
+}
+
+.user-image-name-collection h3 {
+    font-size: 26px;
+    text-align: center;
 }
 
 .user-img-search-sort {
