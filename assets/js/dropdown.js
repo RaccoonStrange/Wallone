@@ -35,3 +35,15 @@ $(document).ready(function() {
         $(this).removeClass('hover');
     });
 });
+
+$(document).ready(function() {
+    $('.parent').click(function() {
+        $('.sub-nav').toggleClass('visible');
+    });
+});
+
+$(document).ready(function() {
+    $('.dropdown-name-user').click(function() {
+        $('.dropdown-profile-content').toggleClass('visible');
+    });
+});
