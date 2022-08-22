@@ -214,6 +214,14 @@ li {
     margin: 0px 20px 0px 20px;
 }
 
+.languages a{
+    font-size: 24px;
+}
+
+.languages p{
+    font-size: 24px;
+}
+
     /*header*/
 
 .header-main {
@@ -341,7 +349,7 @@ li {
     border-radius: 50%;
 }
 
-.profile h2 {
+.profile p {
     font-size: 24px;
     width: 200px;
     display: flex;
@@ -351,6 +359,7 @@ li {
 .dropdown-profile-user-name {
     display: flex;
     align-items: center;
+    height: 70px;
 }
 
 .dropdown-profile {
@@ -372,7 +381,7 @@ li {
 }
 
 .dropdown-profile-content li {
-    font-size: 24px;
+    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: .3s;
