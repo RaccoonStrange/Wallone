@@ -180,9 +180,19 @@
                     <a href="/en">en</a>
                 </div>
                 <div class="profile">
-                    <img src="assets/images/UserName.png" alt="user-icon">
-                    <h2>Профиль</h2>
-                    <!--            TODO: Нужно вставить выпадающий список-->
+                    <div class="dropdown-profile">
+                        <ul id="dropdown">
+                            <div class="dropdown-profile-user-name dropdown-name-user">
+                                <img class="" src="assets/images/UserName.png" alt="user-icon">
+                                <p class="">Профиль</p>
+                            </div>
+                            <ul class="dropdown-profile-content">
+                                <a href="login.html"><li>Вход</li></a>
+                                <a href="register.html"><li>Регистрация</li></a>
+                                <a class="border-top" href="logout"><li>Выход</li></a>
+                            </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,12 +202,12 @@
                 <div class="row-create-image">
                     <div class="block-image-input-select">
                         <label for="name" class="block-image-label">Название</label>
-                        <input type="text" id="name" placeholder="Название" required>
+                        <input class="error-input" type="text" id="name" placeholder="Название" required>
                         <small class="error-text">Название темы уже существует, придумайте новое название</small>
                     </div>
                     <div class="block-image-input-select">
                         <label for="categories" class="block-image-label">Категории</label>
-                        <select name="categories" id="categories" required>
+                        <select class="error-input" name="categories" id="categories" required>
                             <option class="select-category" value="">Выберите категорию</option>
                             <option value="">Персонажи</option>
                             <option value="">Природа</option>
@@ -209,12 +219,12 @@
                 <div class="row-create-image">
                     <div class="block-image-input-select">
                         <label for="description" class="block-image-label">Описание</label>
-                        <textarea name="description" id="description" placeholder="Описание темы" required></textarea>
+                        <textarea class="error-input" name="description" id="description" placeholder="Описание темы" required></textarea>
                         <small class="error-text">Это поле обязательное для заполнения</small>
                     </div>
                     <div class="block-image-input-select">
                         <label for="tags" class="block-image-label">Теги</label>
-                        <input type="text" id="tags" placeholder="Погода, солнечно">
+                        <input class="error-input" type="text" id="tags" placeholder="Погода, солнечно">
                         <small class="create-image-text">Не обязательное поле</small>
                         <div class="block-image-checkbox">
                             <div class="block-image-checkbox-input">

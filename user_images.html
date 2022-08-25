@@ -180,9 +180,19 @@
                     <a href="/en">en</a>
                 </div>
                 <div class="profile">
-                    <img src="assets/images/UserName.png" alt="user-icon">
-                    <h2>Профиль</h2>
-                    <!--            TODO: Нужно вставить выпадающий список-->
+                    <div class="dropdown-profile">
+                        <ul id="dropdown">
+                            <div class="dropdown-profile-user-name dropdown-name-user">
+                                <img class="" src="assets/images/UserName.png" alt="user-icon">
+                                <p class="">Профиль</p>
+                            </div>
+                            <ul class="dropdown-profile-content">
+                                <a href="login.html"><li>Вход</li></a>
+                                <a href="register.html"><li>Регистрация</li></a>
+                                <a class="border-top" href="logout"><li>Выход</li></a>
+                            </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
