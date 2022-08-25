@@ -1052,7 +1052,7 @@ li {
     z-index: 1000;
     width: 40px;
     height: 40px;
-    background: url("/assets/images/up-arrow.png") 50% 50% no-repeat;
+    background: url("/assets/images/icons/up-arrow.png") 50% 50% no-repeat;
     border-radius: 50%;
     border: 1px solid #3492C8;
     background-color: #3492C8;
