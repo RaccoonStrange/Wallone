@@ -193,23 +193,24 @@
                     <div class="block-image-input-select">
                         <label for="name" class="block-image-label">Название</label>
                         <input type="text" id="name" placeholder="Название" required>
-                        <small class="create-image-error-text">Название темы уже существует, придумайте новое название</small>
+                        <small class="error-text">Название темы уже существует, придумайте новое название</small>
                     </div>
                     <div class="block-image-input-select">
                         <label for="categories" class="block-image-label">Категории</label>
                         <select name="categories" id="categories" required>
+                            <option class="select-category" value="">Выберите категорию</option>
                             <option value="">Персонажи</option>
                             <option value="">Природа</option>
                             <option value="">Техника</option>
                         </select>
-                        <small class="create-image-active-text">Обязательное поле 2px сверху</small>
+                        <small class="error-text">Это поле обязательное для заполнения</small>
                     </div>
                 </div>
                 <div class="row-create-image">
                     <div class="block-image-input-select">
                         <label for="description" class="block-image-label">Описание</label>
                         <textarea name="description" id="description" placeholder="Описание темы" required></textarea>
-                        <small class="create-image-active-text">Активное поле Обязательное поле 2px сверху</small>
+                        <small class="error-text">Это поле обязательное для заполнения</small>
                     </div>
                     <div class="block-image-input-select">
                         <label for="tags" class="block-image-label">Теги</label>
