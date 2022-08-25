@@ -503,8 +503,9 @@ li {
     z-index: 5;
 }
 
-.info p{
+.info p {
     text-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 .active-hover-image {
