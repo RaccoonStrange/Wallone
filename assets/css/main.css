@@ -274,7 +274,8 @@ li {
     display: flex;
     /*width: 380px;*/
     align-items: center;
-    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-bottom: auto;
 }
 
 .search-input {
