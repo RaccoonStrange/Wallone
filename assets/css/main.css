@@ -215,7 +215,6 @@ li {
 }
 
 .footer-left-menu {
-    width: 310px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -242,7 +241,6 @@ li {
 .messenger img {
     width: 40px;
     vertical-align: top;
-    margin: 5px;
 }
 
 /*---*/
@@ -303,6 +301,11 @@ li {
     display: flex;
     /*flex-direction: row;*/
     flex-wrap: wrap;
+}
+
+.grid a
+{
+    margin: 2px;
 }
 
 .tags {
