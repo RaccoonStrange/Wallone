@@ -1204,10 +1204,6 @@ i.icon-up-open-big:after {
     border: 1px solid #3492C8;
 }
 
-.feedback-row input:invalid {
-    border: 1px solid #F05454;
-}
-
 .feedback-row textarea {
     max-width: 740px;
     min-width: 740px;
@@ -1225,10 +1221,6 @@ i.icon-up-open-big:after {
 
 .feedback-row textarea:focus {
     border: 1px solid #3492C8;
-}
-
-.feedback-row textarea:invalid {
-    border: 1px solid #F05454;
 }
 
 .feedback-row label {
@@ -1369,7 +1361,7 @@ i.icon-up-open-big:after {
 }
 
 .block-image-input-select label {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .block-image-input-select small {
