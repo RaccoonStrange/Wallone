@@ -481,16 +481,10 @@ li {
 }
 
 .user-images-search select {
-    margin-right: 20px;
     background-color: #1e1e1e;
     color: #3492C8;
     border: none;
-    font-size: 14px;
-    margin-top: 1px;
-}
-
-.user-image-name-collection {
-    margin: 40px 0px 20px 0px;
+    font-size: 16px;
 }
 
 .user-image-name-collection h3 {
