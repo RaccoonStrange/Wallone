@@ -12,7 +12,7 @@ body {
     color: #fff;
 }
 
-h1, h2, h3, h4, h5, p, a, label, input {
+h1, h2, h3, h4, h5, p, a, label, input, small {
     font-family: "Roboto", sans-serif;
 }
 
@@ -1373,6 +1373,7 @@ i.icon-up-open-big:after {
 }
 
 .block-image-input-select small {
+    padding: 5px;
     font-size: 14px;
 }
 
