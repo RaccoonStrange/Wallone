@@ -271,7 +271,7 @@ li {
     display: flex;
     /*width: 380px;*/
     align-items: center;
-    margin-top: 25px;
+    margin-top: 23px;
     margin-bottom: auto;
 }
 
@@ -322,22 +322,27 @@ li {
 }
 
 .user-image-search-input {
-    width: 740px;
+    width: 150px;
+    margin-left: 10px;
 }
 
-.user-image-search-input [type=search] {
-    width: 100%;
-    height: 55px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #2b2b2b;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 16px;
-    /*background: transparent;*/
+.user-image-search-input [type=submit] {
+    width: 150px;
+    height: 35px;
     border-radius: 10px;
+    background-color: #3492C8;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .5s;
 }
+
+.user-image-search-input [type=submit]:hover {
+    background-color: #196FA0;
+    transition: .5s;
+}
+
+
 
 .form-search {
     position: relative;
@@ -464,7 +469,7 @@ li {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    width: 1120px;
+    width: 100%;
 }
 
 .user-images-panel a {
@@ -476,7 +481,6 @@ li {
 .user-images-search {
     display: flex;
     align-items: center;
-
 }
 
 .user-images-search p {
@@ -489,6 +493,16 @@ li {
     color: #3492C8;
     border: none;
     font-size: 16px;
+}
+
+.actual-tags-block p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.user-image-name-collection {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .user-image-name-collection h3 {
@@ -713,7 +727,6 @@ li {
 .login-form-input {
     width: 100%;
     min-width: 10%;
-    padding-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -916,22 +929,12 @@ li {
     transition: .7s;
 }
 
-/*.login-inp {*/
-/*    margin-right: 20px;*/
-/*}*/
-
-/*.register-inp {*/
-/*    margin-right: 20px;*/
-/*}*/
-
 .heading {
     font-style: normal;
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-
-    text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .h2-single-text {
@@ -1400,6 +1403,27 @@ i.icon-up-open-big:after {
     width: 355px;
 }
 
+.block-image-input-submit {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.block-image-input-submit input {
+    width: 290px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #3492C8;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.block-image-input-submit input:hover {
+    background-color: #196FA0;
+    transition: .5s;
+}
+
 .add-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1586,10 +1610,67 @@ i.icon-up-open-big:after {
 
 /*-----------*/
 
+/*All categories*/
+
+.all-categories-block {
+    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    width: 360px;
+}
+
+.category img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.category h3 {
+    font-size: 20px;
+}
+
+.category p {
+    font-size: 16px;
+}
+
+.category-info-block {
+    margin-left: 20px;
+    word-break: break-all;
+}
+
+.category-info-block h3 {
+    margin-bottom: 5px;
+}
+
+.category-info-block p {
+    max-width: 225px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-text {
+    width: 225px;
+}
+
+/*--------------*/
+
 @media screen and (max-width: 1850px) {
     .container {
         justify-content: center;
-        /*width: 1120px;*/
+    }
+
+    .privacy-policy {
+        margin: 0;
+    }
+
+    .all-categories-block {
+        grid-template-columns: repeat(3, 360px);
     }
 
     .scroll_top {
@@ -1630,15 +1711,6 @@ i.icon-up-open-big:after {
         float: none;
     }
 
-    /*.left-menu {*/
-    /*    width: 200px;*/
-    /*    height: 100%;*/
-    /*    margin: 0 auto;*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    flex-wrap: wrap;*/
-    /*}*/
-
     .menu {
         position: initial;
         justify-content: center;
@@ -1668,43 +1740,20 @@ i.icon-up-open-big:after {
         margin-left: 0px;
         /*text-align: center;*/
     }
-
-    /*.footer-left-menu {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*.categories>nav {*/
-    /*    margin-bottom: 20px;*/
-    /*}*/
-
-    /*.dropdown-label:after {*/
-    /*    margin-left: 10px;*/
-    /*    content: '\f078';*/
-    /*    font-family: FontAwesome;*/
-    /*    color: #fff;*/
-    /*}*/
-
-    /*.categories nav label {*/
-    /*    cursor: pointer;*/
-    /*}*/
-
-    /*.categories nav label{*/
-    /*    display: inline-block;*/
-    /*}*/
-
-    /*.categories nav > ul {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*input[type="checkbox"]:checked ~ label + ul {*/
-    /*    display: block;*/
-    /*}*/
 }
 
+@media screen and (max-width: 1635px) {
+    .privacy-policy-block {
+        width: 1120px;
+    }
+
+    .privacy-policy {
+        width: 1120px;
+    }
+}
+
+
 @media screen and (max-height: 920px) {
-    /*.footer-left-menu {*/
-    /*    display: none;*/
-    /*}*/
 
     .categories>nav {
         margin-bottom: 20px;
@@ -1716,10 +1765,6 @@ i.icon-up-open-big:after {
         font-family: FontAwesome;
         color: #fff;
     }
-
-    /*.scroll_top {*/
-    /*    bottom: 100%;*/
-    /*}*/
 
     .categories nav label {
         cursor: pointer;
@@ -1741,6 +1786,18 @@ i.icon-up-open-big:after {
 @media screen and (max-width: 1480px) {
     .container {
         justify-content: center;
+    }
+
+    .all-categories-block {
+        grid-template-columns: repeat(2, 360px);
+    }
+
+    .privacy-policy-block {
+        width: 740px;
+    }
+
+    .privacy-policy {
+        width: 740px;
     }
 
     .block-image-input-select small {
@@ -1834,11 +1891,6 @@ i.icon-up-open-big:after {
 
     .login-form {
         align-items: start;
-    }
-
-    .privacy-policy {
-        width: 740px;
-        margin: 0;
     }
 }
 
@@ -1975,6 +2027,19 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .privacy-policy-block {
+        width: 360px;
+    }
+
+    .privacy-policy {
+        width: 360px;
+    }
+
+    .all-categories-block {
+
+        grid-template-columns: repeat(1, 360px);
+    }
+
     .categories {
         margin-bottom: 20px;
         margin-left: 0px;
@@ -2082,6 +2147,18 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .privacy-policy-block {
+        width: 300px;
+    }
+
+    .privacy-policy {
+        width: 300px;
+    }
+
+    .h1-policy {
+        font-size: 28px;
     }
 
     .content {
