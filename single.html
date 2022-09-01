@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/simple-adaptive-slider.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/main.js" defer></script>
     <title>Wallone - Обои</title>
@@ -156,9 +157,19 @@
                     <a href="/en">en</a>
                 </div>
                 <div class="profile">
-                    <img src="assets/images/UserName.png" alt="user-icon">
-                    <h2>Профиль</h2>
-                    <!--            TODO: Нужно вставить выпадающий список-->
+                    <div class="dropdown-profile">
+                        <ul id="dropdown">
+                            <div class="dropdown-profile-user-name dropdown-name-user">
+                                <img class="" src="assets/images/UserName.png" alt="user-icon">
+                                <p class="">Профиль</p>
+                            </div>
+                            <ul class="dropdown-profile-content">
+                                <a href="login.html"><li>Вход</li></a>
+                                <a href="register.html"><li>Регистрация</li></a>
+                                <a class="border-top" href="logout"><li>Выход</li></a>
+                            </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,24 +177,42 @@
 <!--            <h2 class="h2-single-text">One Day</h2>-->
             <div class="more-info-hover-image">
                 <div class="more-info-left-block-img">
-                    <img src="assets/images/anime/3.jpg">
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <img src="assets/images/anime/3.jpg">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="assets/images/anime/3.jpg">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="assets/images/anime/3.jpg">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="assets/images/anime/3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                    </div>
                 </div>
                 <div class="more-info-right-block-img">
                     <div class="author-post-image">
                         <div class="profile">
-                            <div class="dropdown-profile">
-                                <ul id="dropdown">
-                                    <div class="dropdown-profile-user-name dropdown-name-user">
-                                        <img class="" src="assets/images/UserName.png" alt="user-icon">
-                                        <p class="">Профиль</p>
-                                    </div>
-                                    <ul class="dropdown-profile-content">
-                                        <a href="login.html"><li>Вход</li></a>
-                                        <a href="register.html"><li>Регистрация</li></a>
-                                        <a class="border-top" href="logout"><li>Выход</li></a>
-                                    </ul>
-                                </ul>
+                            <div class="dropdown-profile-user-name dropdown-name-user">
+                                <img class="" src="assets/images/UserName.png" alt="user-icon">
+                                <div class="user-profile-text">
+                                    <p class="">Профиль</p>
+                                    <a class="user-profile-link" href="profile.html">Открыть профиль</a>
+                                </div>
                             </div>
+                            <ul class="dropdown-profile-content">
+                                <a href="login.html"><li>Вход</li></a>
+                                <a href="register.html"><li>Регистрация</li></a>
+                                <a class="border-top" href="logout"><li>Выход</li></a>
+                            </ul>
                         </div>
                     </div>
                     <p class="more-info-right-block-text">
@@ -213,11 +242,11 @@
                         <div class="more-category-post-right ">
                             <div class="post-category-row active">
                                 <img src="assets/images/logo.png">
-                                <p>Кошки</p>
+                                <a href="#"><p>Кошки</p></a>
                             </div>
                             <div class="post-category-row active">
                                 <img src="assets/images/logo.png">
-                                <p>Аниме</p>
+                                <a href="#"><p>Аниме</p></a>
                             </div>
                         </div>
                     </div>
@@ -236,7 +265,7 @@
                                 <a class="input-add_collection" href="#openModal">Добавить в коллекцию</a>
                                 <div id="openModal" class="modalDialog">
                                     <div>
-                                        <a href="#close" title="Закрыть" class="close">x</a>
+                                        <a href="#close" id="close" title="Закрыть" class="close">x</a>
                                         <h2 class="h2-collection">Коллекции</h2>
                                         <form action="">
                                             <div class="collection-row">
@@ -330,7 +359,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -394,7 +423,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -409,7 +438,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -473,7 +502,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -537,7 +566,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -601,7 +630,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -665,7 +694,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -729,7 +758,7 @@
                         <div class="info-profile">
                             <a href="profile.html">
                                 <img src="assets/images/logo-user.png">
-                                <h1>RaBerryOn</h1>
+                                <h4>RaBerryOn</h4>
                             </a>
                         </div>
                     </div>
@@ -746,6 +775,10 @@
 <script src="assets/js/onclick.js"></script>
 <script src="assets/js/btn_up-down.js"></script>
 <script src="https://kit.fontawesome.com/a5a9f64acd.js" crossorigin="anonymous"></script>
+<script defer src="assets/js/simple-adaptive-slider.js"></script>
+
+<script src="assets/js/infinite-scrolling.js"></script>
+
 <script src="assets/js/close_scroll.js"></script>
 </body>
 </html>

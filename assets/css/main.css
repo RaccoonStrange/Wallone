@@ -582,7 +582,7 @@ li {
     width: 26px;
 }
 
-.info-profile h1 {
+.info-profile h4 {
     font-size: 16px;
 }
 
@@ -1020,12 +1020,32 @@ li {
     line-height: 28px;
 }
 
+.post-category-row a {
+    color: #3492C8;
+    transition: .2s;
+}
+
+.post-category-row a:hover {
+    color: #307BA6;
+    transition: .2s;
+}
+
 .post-category-num {
     margin-left: 15px;
 }
 
 .author-post-image {
     margin-bottom: 45px;
+}
+
+.user-profile-link {
+    color: #3492C8;
+    transition: .2s;
+}
+
+.user-profile-link:hover {
+    color: #307BA6;
+    transition: .2s;
 }
 
 .submit-post-image {
@@ -1728,6 +1748,29 @@ i.icon-up-open-big:after {
 
 /*----------*/
 
+/*slider*/
+
+.slider__items {
+    counter-reset: slide;
+}
+
+.slider__item {
+    counter-increment: slide;
+}
+
+.slider__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/*------*/
+
 @media screen and (max-width: 1850px) {
     .container {
         justify-content: center;
@@ -1742,6 +1785,8 @@ i.icon-up-open-big:after {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+
 
     .more-info-left-block-img {
         margin-right: 0px;
@@ -2144,6 +2189,28 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .slider {
+        width: 360px;
+        height: 100%;
+    }
+
+    .modalDialog > div {
+        width: 360px;
+        height: 450px;
+    }
+
+    .collection-row label {
+        font-size: 18px;
+    }
+
+    .collection-row input {
+        width: 320px;
+    }
+
+    .collection-row select {
+        width: 320px;
+    }
+
     .line-d9 {
         width: 100%;
     }
@@ -2309,6 +2376,28 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .slider {
+        width: 300px;
+        height: 100%;
+    }
+
+    .modalDialog > div {
+        width: 300px;
+        height: 450px;
+    }
+
+    .collection-row label {
+        font-size: 14px;
+    }
+
+    .collection-row input {
+        width: 260px;
+    }
+
+    .collection-row select {
+        width: 260px;
     }
 
     .line-d9 {
