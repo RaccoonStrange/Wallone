@@ -228,6 +228,10 @@ li {
     color: #3492C8;
 }
 
+.text-post-image a {
+    color: #3492C8;
+}
+
 .site-information a:hover{
     color: rgba(52, 146, 200, 0.8);
 }
@@ -625,7 +629,7 @@ li {
 
 .line-d9 {
     background-color: #d9d9d9;
-    width: 1500px;
+    width: 100%;
     height: 125px;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -958,18 +962,21 @@ li {
 /*----single---*/
 
 .more-info-hover-image {
-    /*width: 1500px;*/
+    width: 1500px;
     display: flex;
+    margin-bottom: 20px;
 
 }
 
 .more-info-left-block-img {
-    max-width: 760px;
+    width: 760px;
+    height: 425px;
     margin-right: 20px;
 }
 
 .more-info-left-block-img img{
     width: 100%;
+    height: 100%;
     vertical-align: bottom;
 }
 
@@ -984,13 +991,12 @@ li {
 
 .more-category-post {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
+    height: 90px;
 }
 
 .more-category-post-left {
-    /*display: flex;*/
     width: 350px;
-    height: 100px;
     flex-wrap: wrap;
 }
 
@@ -1023,12 +1029,10 @@ li {
 }
 
 .submit-post-image {
-    /*display: flex;*/
     background-color: #272222;
     padding: 10px;
     width: 720px;
     height: 100px;
-    position: absolute;
 }
 
 .submit-post-image input{
@@ -1048,31 +1052,77 @@ li {
 
 .submit-post-input-left {
     display: flex;
+    width: 300px;
+    justify-content: space-between;
 }
 
 .input-download {
     width: 210px;
+    background-color: #3492C8;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .input-like {
     width: 75px;
+    background-color: #3492C8;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .input-add_collection {
     width: 260px;
+    background-color: #3492C8;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .input-star {
     width: 75px;
+    height: 45px;
+    background-color: #3492C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.star-icon {
+    fill: white;
 }
 
 .submit-post-input-right {
     display: flex;
+    align-items: center;
+    width: 350px;
+    justify-content: space-between;
 }
+
 
 .text-post-image {
     display: flex;
     justify-content: space-between;
+}
+
+.rule-link {
+    color: #3492C8;
+    text-align: center;
+}
+
+.rule-link:hover {
+    color: #3492C8;
 }
 
 /*-------------*/
@@ -1664,9 +1714,47 @@ i.icon-up-open-big:after {
 
 /*--------------*/
 
+/*site rules*/
+
+.site-rules-block {
+    width: 1500px;
+}
+
+.h1-site-rules {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/*----------*/
+
 @media screen and (max-width: 1850px) {
     .container {
         justify-content: center;
+    }
+
+    .images {
+        width: 1120px;
+    }
+
+    .more-info-hover-image {
+        width: 1120px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .more-info-left-block-img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .more-info-right-block-img {
+        width: 760px;
+    }
+
+    .submit-post-image {
+        justify-content: center;
+        width: 760px;
     }
 
     .privacy-policy {
@@ -1792,6 +1880,31 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .images {
+        width: 740px;
+    }
+
+    .submit-post-image {
+        justify-content: normal;
+        width: 740px;
+    }
+
+    .more-info-left-block-img {
+        height: 100%;
+    }
+
+    .more-info-right-block-img {
+        width: 740px;
+    }
+
+    .more-info-hover-image {
+        width: 740px;
+    }
+
+    .line-d9 {
+        width: 740px;
+    }
+
     .all-categories-block {
         grid-template-columns: repeat(2, 360px);
     }
@@ -1848,6 +1961,10 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .images {
+        width: 740px;
+    }
+
     .header-main {
         width: 740px;
     }
@@ -1856,10 +1973,6 @@ i.icon-up-open-big:after {
         display: flex;
         width: 380px;
         align-items: center;
-    }
-
-    .images {
-        width: 1120px;
     }
 
     .user-images-panel a {
@@ -2031,6 +2144,51 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .line-d9 {
+        width: 100%;
+    }
+
+    .more-info-hover-image {
+        width: 360px;
+    }
+
+    .more-info-left-block-img {
+        width: 360px;
+        height: 100%;
+    }
+
+    .more-info-right-block-img {
+        width: 360px;
+    }
+
+    .more-category-post {
+        flex-wrap: wrap;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+    .submit-post-image {
+        width: 360px;
+        height: 185px;
+    }
+
+    .submit-post-image p {
+        text-align: center;
+    }
+
+    .submit-post-input {
+        flex-wrap: wrap;
+    }
+
+    .submit-post-input-left {
+        width: 340px;
+        margin-bottom: 20px;
+    }
+
+    .submit-post-input-left input {
+        width: 260px;
+    }
+
     .privacy-policy-block {
         width: 360px;
     }
@@ -2151,6 +2309,59 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .line-d9 {
+        width: 100%;
+    }
+
+    .submit-post-input-left input{
+        width: 210px;
+    }
+
+    .submit-post-input-left>a{
+        width: 60px;
+    }
+
+    .input-add_collection {
+        width: 210px;
+        font-size: 16px;
+    }
+
+    .input-star {
+        width: 60px;
+    }
+
+    .more-category-post-left {
+        width: 300px;
+    }
+
+    .more-info-hover-image {
+        width: 300px;
+    }
+
+    .more-info-left-block-img {
+        width: 300px;
+        height: 100%;
+    }
+
+    .more-info-right-block-img {
+        width: 300px;
+    }
+
+    .more-category-post {
+        flex-wrap: wrap;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+    .submit-post-image {
+        width: 300px;
+        height: 205px;
+    }
+
+    .submit-post-image p {
+        text-align: center;
     }
 
     .privacy-policy-block {
