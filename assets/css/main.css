@@ -1004,7 +1004,7 @@ li {
     display: flex;
     align-items: center;
     width: 350px;
-    /*margin-bottom: 15px;*/
+    margin-bottom: 5px;
 }
 
 .post-category-row img {
