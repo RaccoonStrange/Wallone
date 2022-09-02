@@ -3,8 +3,8 @@
 .slider {
   position: relative;
   overflow: hidden;
-  width: 760px;
-  height: 425px;
+  /*width: 760px;*/
+  /*height: 425px;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,18 +106,13 @@
   height: 12px;
   margin-right: 9px;
   margin-left: 9px;
-  background-color: #307BA6;
+  background-color: #FFFFFF;
   background-clip: padding-box;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .slider__indicator_active {
-  background-image: url("/home.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  border-radius: 0;
+  background-color: #3492C8;
 }
 /*# sourceMappingURL=main.css.map */
