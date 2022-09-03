@@ -968,10 +968,6 @@ li {
 
 }
 
-.user-profile-text p{
-    width: 655px;
-}
-
 .more-info-left-block-img {
     width: 760px;
     height: 425px;
@@ -993,11 +989,6 @@ li {
     margin-bottom: 20px;
 }
 
-.more-info-right-block-text-h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 .more-category-post {
     display: flex;
     margin-bottom: 43px;
@@ -1009,16 +1000,10 @@ li {
     flex-wrap: wrap;
 }
 
-.more-category-post-right {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .post-category-row {
     display: flex;
     align-items: center;
-    width: 170px;
+    width: 350px;
     /*margin-bottom: 15px;*/
 }
 
@@ -1050,7 +1035,7 @@ li {
 }
 
 .author-post-image {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .user-profile-link {
@@ -1609,13 +1594,6 @@ i.icon-up-open-big:after {
     text-decoration: none;
     /*border: 1px solid #3492C8;*/
     font-size: 24px;
-    stroke: #fff;
-    transition: .3s;
-}
-
-.close:hover {
-    stroke: #3492C8;
-    transition: .3s;
 }
 
 .h2-collection {
@@ -1656,7 +1634,7 @@ i.icon-up-open-big:after {
     font-size: 14px;
 }
 
-.input-select button {
+.input-select input {
     position: absolute;
     width: 75px;
     height: 45px;
@@ -1667,10 +1645,9 @@ i.icon-up-open-big:after {
     border: 1px solid #3492C8;
     transition: .3s;
     color: #fff;
-    cursor: pointer;
 }
 
-.input-select button:hover {
+.input-select input:hover {
     background-color: #3492C8;
     transition: .5s;
 }
@@ -2212,11 +2189,6 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
-    .user-profile-text p {
-        width: 295px;
-        font-size: 16px;
-    }
-
     .slider {
         width: 360px;
         height: 100%;
@@ -2404,15 +2376,6 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
-    }
-
-    .user-profile-text p {
-        width: 235px;
-        font-size: 14px;
-    }
-
-    .post-category-row {
-        width: 300px;
     }
 
     .slider {
