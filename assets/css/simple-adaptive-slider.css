@@ -3,8 +3,8 @@
 .slider {
   position: relative;
   overflow: hidden;
-  /*width: 760px;*/
-  /*height: 425px;*/
+  width: 760px;
+  height: 425px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -20,6 +20,12 @@
 .slider__items {
   display: flex;
   transition: transform 0.5s ease;
+}
+
+.slider__items img {
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
 }
 
 /* класс для отключения transition */
