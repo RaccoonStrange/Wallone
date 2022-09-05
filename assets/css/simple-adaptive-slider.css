@@ -3,8 +3,8 @@
 .slider {
   position: relative;
   overflow: hidden;
-  width: 760px;
-  height: 425px;
+  /*width: 760px;*/
+  /*height: 425px;*/
   margin-left: auto;
   margin-right: auto;
 }
