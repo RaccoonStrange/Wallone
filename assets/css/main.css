@@ -365,13 +365,6 @@ li {
     background: transparent;
 }
 
-.form-search [type=submit]:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-size: 20px;
-    color: #F9F0DA;
-}
-
 .language {
     width: 120px;
     display: flex;
@@ -1013,7 +1006,7 @@ li {
 }
 
 .post-category-row p {
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-family: "Roboto",sans-serif;
     font-weight: 400;
@@ -1049,7 +1042,7 @@ li {
 }
 
 .submit-post-image {
-    background-color: #272222;
+    /*background-color: #272222;*/
     padding: 10px;
     width: 720px;
     height: 100px;
@@ -1911,10 +1904,6 @@ i.icon-up-open-big:after {
         display: inline-block;
     }
 
-    .categories nav > ul {
-        display: none;
-    }
-
     input[type="checkbox"]:checked ~ label + ul {
         display: block;
     }
@@ -2075,7 +2064,7 @@ i.icon-up-open-big:after {
     }
 
     .header-right {
-        margin-bottom: 15px;
+        /*margin-bottom: 15px;*/
     }
 
     .header-right {
