@@ -120,7 +120,7 @@ li {
 /*left menu*/
 
 .left-menu {
-    width: 360px;
+    /*width: 360px;*/
     height: auto;
 }
 
@@ -207,9 +207,9 @@ li {
 
 .active:after {
     margin-left: 20px;
-    content: "\f111";
-    font-family: FontAwesome;
-    font-size: 8px;
+    content: "•";
+    font-family: Roboto;
+    font-size: 28px;
     color: #3492C8;
     vertical-align: middle;
 }
