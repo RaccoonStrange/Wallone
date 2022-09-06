@@ -66,6 +66,7 @@ li {
 
 .container aside {
     position: fixed;
+    height: 100%;
 }
 
 .header-main {
@@ -218,10 +219,18 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .site-information p {
     margin-bottom: 10px;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .site-information a{
@@ -240,6 +249,8 @@ li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: 80px;
+    margin-left: 10px;
 }
 
 .messenger img {
@@ -719,16 +730,6 @@ li {
     color: #fff;
 }
 
-/*.mes-footer {*/
-/*    max-width: 350px;*/
-/*}*/
-
-/*.mes-footer img {*/
-/*    width: 50px;*/
-/*    vertical-align: top;*/
-/*    margin: 5px;*/
-/*}*/
-
 /*input text form*/
 
 .form-login {
@@ -1114,6 +1115,11 @@ li {
     justify-content: space-between;
 }
 
+.submit-post-input-guest {
+    display: flex;
+    justify-content: space-between;
+}
+
 .submit-post-input-left {
     display: flex;
     width: 300px;
@@ -1145,6 +1151,7 @@ li {
     align-items: center;
     justify-content: center;
     transition: .3s;
+    cursor: pointer;
 }
 
 .input-like:hover {
@@ -1180,6 +1187,7 @@ li {
     border-radius: 10px;
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
 }
 
 .input-star:hover {
@@ -1659,7 +1667,19 @@ i.icon-up-open-big:after {
     text-align: center;
     top: 15px;
     text-decoration: none;
-    /*border: 1px solid #3492C8;*/
+    font-size: 24px;
+    stroke: #fff;
+}
+
+.close2 {
+    color: #FFFFFF;
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    top: 15px;
+    text-decoration: none;
     font-size: 24px;
     stroke: #fff;
 }
@@ -1852,6 +1872,7 @@ i.icon-up-open-big:after {
 
     .left-menu {
         position: fixed;
+        height: 100%;
     }
 
 
