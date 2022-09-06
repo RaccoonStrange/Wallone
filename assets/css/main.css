@@ -1964,7 +1964,7 @@ i.icon-up-open-big:after {
 
     .dropdown-label:after {
         margin-left: 10px;
-        content: url("/files/icons/chevron-down.svg");
+        content: url("/assets/images/svg/chevron-down.svg");
         color: #fff;
     }
 
@@ -2214,7 +2214,7 @@ i.icon-up-open-big:after {
 
     .dropdown-label:after {
         margin-left: 10px;
-        content: url("/files/icons/chevron-down.svg");
+        content: url("/assets/images/svg/chevron-down.svg");
         color: #fff;
     }
 
