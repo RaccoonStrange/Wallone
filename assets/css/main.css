@@ -1022,8 +1022,17 @@ li {
 }
 
 .more-category-post-right {
+    width: 300px;
+}
+
+.post-more-category-row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+.post-more-category-row a {
+    margin-right: 10px;
 }
 
 .user-profile-text p {
@@ -1033,9 +1042,8 @@ li {
 .post-category-row {
     display: flex;
     align-items: center;
-    width: 150px;
-    /*margin-bottom: 15px;*/
-    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
 }
 
 .post-category-row img {
@@ -1539,7 +1547,6 @@ i.icon-up-open-big:after {
 
 .block-image-input-submit {
     margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 .block-image-input-submit input {
@@ -1962,6 +1969,10 @@ i.icon-up-open-big:after {
         margin-bottom: 20px;
     }
 
+    .block-image-input-submit {
+        margin-bottom: 50px;
+    }
+
     .dropdown-label:after {
         margin-left: 10px;
         content: url("/assets/images/svg/chevron-down.svg");
@@ -2252,10 +2263,6 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
-    .advertisement {
-        height: 202px;
-    }
-
     .more-info-left-block-img img {
         width: 360px;
         height: 202px;
@@ -2263,7 +2270,7 @@ i.icon-up-open-big:after {
 
     .user-profile-text p {
         width: 295px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .more-category-post-right {
@@ -2529,7 +2536,6 @@ i.icon-up-open-big:after {
 
     .more-category-post {
         flex-wrap: wrap;
-        height: 140px;
         margin-bottom: 20px;
     }
 
