@@ -1044,7 +1044,6 @@ li {
     display: flex;
     align-items: center;
     width: 300px;
-    margin-bottom: 15px;
 }
 
 .post-category-row img {
@@ -1860,10 +1859,177 @@ i.icon-up-open-big:after {
 
 /*------*/
 
+/*Страница с профиля*/
+
+.user-profile {
+    width: 1500px;
+    display: flex;
+}
+
+.user-profile-images-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 202px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 1120px;
+}
+
+.user-profile-info {
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile-info-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.user-profile-info-block img {
+    width: 320px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.user-profile-info-name-h3 {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-info-name-h3 h3 {
+    font-size: 24px;
+}
+
+.user-profile-info-name p {
+    font-size: 14px;
+}
+
+.user-profile-info-name-h3 svg {
+    margin-left: 5px;
+}
+
+.user-profile-info-input {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.user-profile-info-input input {
+    font-size: 20px;
+    background-color: #3492C8;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.user-profile-info-input input:hover {
+    background-color: #2f7ba6;
+    transition: .3s;
+}
+
+.user-profile-info-input input {
+    width: 325px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.user-profile-info-friends-posts-likes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.user-profile-info-friends-posts-likes p {
+    font-size: 18px;
+}
+
+.user-profile-info-friends-posts-likes h4 {
+    font-size: 22px;
+}
+
+.user-profile-info-dot-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-info-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot-blue {
+    background-color: #3492C8;
+}
+
+.dot-yellow {
+    background-color: #FFDD93;
+}
+
+.dot-red {
+    background-color: #F05454;
+}
+
+.user-profile-info-text-about-me {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.user-profile-info-text-about-me h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.user-profile-info-text-about-me p {
+    font-size: 16px;
+    color: #DDDDDD;
+}
+
+.user-profile-info-prg-img-collect {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.user-profile-info-prg-img-collect a {
+    font-size: 22px;
+    color: #fff;
+}
+
+.user-profile-info-messengers {
+    width: 100%;
+}
+
+.user-profile-info-messengers a {
+    font-size: 22px;
+    color: #3492C8;
+}
+
+/*------------------*/
+
 @media screen and (max-width: 1850px) {
     .container {
         justify-content: center;
 
+    }
+
+    .user-profile {
+        width: 1120px;
+    }
+
+    .user-profile-images-block {
+        grid-template-columns: repeat(2, 1fr);
+        width: 740px;
     }
 
     .content {
@@ -2020,6 +2186,15 @@ i.icon-up-open-big:after {
 @media screen and (max-width: 1480px) {
     .container {
         justify-content: center;
+    }
+
+    .user-profile {
+        width: 740px;
+    }
+
+    .user-profile-images-block {
+        grid-template-columns: repeat(1, 1fr);
+        width: 360px;
     }
 
     .images {
@@ -2284,6 +2459,20 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .user-profile {
+        display: block;
+        width: 360px;
+    }
+
+    .user-profile-info {
+        margin-bottom: 30px;
+    }
+
+    .user-profile-images-block {
+        grid-template-columns: repeat(1, 1fr);
+        width: 360px;
+    }
+
     .more-info-left-block-img img {
         width: 360px;
         height: 202px;
@@ -2488,6 +2677,30 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+
+    .user-profile {
+        display: block;
+        width: 300px;
+    }
+
+    .user-profile-info {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .user-profile-info-block img {
+        width: 300px;
+    }
+
+    .user-profile-info-input input {
+        width: 275px;
+    }
+
+    .user-profile-images-block {
+        grid-template-columns: repeat(1, 1fr);
+        width: 300px;
     }
 
     .user-profile-text p {
