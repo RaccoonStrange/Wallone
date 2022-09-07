@@ -1881,6 +1881,7 @@ i.icon-up-open-big:after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .user-profile-info-block {
@@ -1953,7 +1954,9 @@ i.icon-up-open-big:after {
 }
 
 .user-profile-info-friends-posts-likes h4 {
+    font-weight: 500;
     font-size: 22px;
+    line-height: 26px;
 }
 
 .user-profile-info-dot-text {
@@ -1987,7 +1990,9 @@ i.icon-up-open-big:after {
 }
 
 .user-profile-info-text-about-me h4 {
+    font-weight: 500;
     font-size: 22px;
+    line-height: 26px;
     margin-bottom: 10px;
 }
 
@@ -2002,7 +2007,9 @@ i.icon-up-open-big:after {
 }
 
 .user-profile-info-prg-img-collect a {
+    font-weight: 500;
     font-size: 22px;
+    line-height: 26px;
     color: #fff;
 }
 
