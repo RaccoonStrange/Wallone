@@ -547,6 +547,18 @@ li {
     height: 202px;
 }
 
+.ad-block {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-block-text p {
+    color: #000;
+    position: absolute;
+}
+
 .hover-image a{
     color: #FFFFFF;;
 }
@@ -1857,8 +1869,6 @@ i.icon-up-open-big:after {
     font-weight: bold;
 }
 
-/*------*/
-
 /*Страница с профиля*/
 
 .user-profile {
@@ -1881,7 +1891,6 @@ i.icon-up-open-big:after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .user-profile-info-block {
@@ -1898,10 +1907,6 @@ i.icon-up-open-big:after {
     width: 320px;
     border-radius: 50px;
     margin-bottom: 15px;
-}
-
-.user-profile-info-name{
-    letter-spacing: 0.02em;
 }
 
 .user-profile-info-name-h3 {
@@ -2032,21 +2037,12 @@ i.icon-up-open-big:after {
     color: #3492C8;
 }
 
-/*------------------*/
+/*------*/
 
 @media screen and (max-width: 1850px) {
     .container {
         justify-content: center;
 
-    }
-
-    .user-profile {
-        width: 1120px;
-    }
-
-    .user-profile-images-block {
-        grid-template-columns: repeat(2, 1fr);
-        width: 740px;
     }
 
     .content {
@@ -2696,7 +2692,6 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
-
     .user-profile {
         display: block;
         width: 300px;
@@ -2709,6 +2704,10 @@ i.icon-up-open-big:after {
 
     .user-profile-info-block img {
         width: 300px;
+    }
+
+    .user-profile-info-name {
+        letter-spacing: 0.02em;
     }
 
     .user-profile-info-input input {
