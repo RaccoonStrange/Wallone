@@ -177,6 +177,10 @@ li {
 
 .categ-row img{
     width: 32px;
+    height: 32px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
     margin: 0 20px 0 0;
 }
 
@@ -548,19 +552,18 @@ li {
 }
 
 .ad-block {
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ad-block-text p {
+.ad-block-text {
     color: #000;
     position: absolute;
 }
 
 .hover-image a{
-    color: #FFFFFF;;
+    color: #FFFFFF;
 }
 
 .hover-image img {
@@ -602,6 +605,7 @@ li {
 
 .info-profile img {
     width: 26px;
+    height: 26px;
 }
 
 .info-profile h4 {
@@ -1802,7 +1806,12 @@ i.icon-up-open-big:after {
 
 .category img {
     width: 120px;
+    height: 120px;
     border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    object-position: top;
+    object-fit: cover;
 }
 
 .category h3 {
@@ -1887,6 +1896,7 @@ i.icon-up-open-big:after {
 
 .user-profile-info {
     width: 360px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -2084,6 +2094,7 @@ i.icon-up-open-big:after {
     }
 
     .all-categories-block {
+        width: 1120px;
         grid-template-columns: repeat(3, 360px);
     }
 
@@ -2264,6 +2275,7 @@ i.icon-up-open-big:after {
     }
 
     .all-categories-block {
+        width: 740px;
         grid-template-columns: repeat(2, 360px);
     }
 
@@ -2579,7 +2591,7 @@ i.icon-up-open-big:after {
     }
 
     .all-categories-block {
-
+        width: 360px;
         grid-template-columns: repeat(1, 360px);
     }
 
@@ -2690,6 +2702,19 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .all-categories-block {
+        width: 300px;
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    .category {
+        width: 300px;
+    }
+
+    .category-info-block {
+        width: 180px;
     }
 
     .user-profile {
