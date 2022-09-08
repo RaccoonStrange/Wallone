@@ -1932,10 +1932,11 @@ i.icon-up-open-big:after {
 }
 
 .user-profile-info-name p {
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
-    line-height: 16px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .user-profile-info-name-h3 svg {
