@@ -473,6 +473,8 @@ li {
     width: 1500px;
 }
 
+
+
 .user-images-panel {
     display: flex;
     align-items: center;
@@ -1664,7 +1666,7 @@ i.icon-up-open-big:after {
     width: 25px;
     height: 25px;
     text-align: center;
-    top: 15px;
+    top: 20px;
     text-decoration: none;
     font-size: 24px;
     stroke: #fff;
@@ -2033,6 +2035,308 @@ i.icon-up-open-big:after {
 }
 
 /*------------------*/
+
+/*Модальное окно с друзьями*/
+
+.modalDialogFriends {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000CC;
+    z-index: 99999;
+    height: 100%;
+}
+
+.user-profile-modal-window-friends {
+    position: relative;
+    width: 730px;
+    height: 650px;
+    background: #2b2b2b;
+    margin: 100px auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.modalDialogFriends:target {
+    display: block;
+}
+
+.user-profile-modal-window-friends-top {
+    margin-bottom: 20px;
+}
+
+.user-profile-modal-window-friends-middle {
+    position: relative;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 690px;
+}
+
+.user-profile-modal-window-friends-middle-friend {
+    display: flex;
+    width: 120px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-modal-window-friends-middle-friend img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/*-------------------------*/
+
+/*Редактирование профиля*/
+
+.edit-user-profile {
+    display: flex;
+    width: 1500px;
+}
+
+.edit-user-profile-image-block {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.edit-user-profile-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.edit-user-profile-image img {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.edit-user-profile-input-load-photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-user-profile-input-load-photo input {
+    width: 325px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #3492C8;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: .3s;
+}
+
+.edit-user-profile-input-load-photo input:hover {
+    background-color: #2f7ba6;
+    transition: .3s;
+}
+
+.edit-user-profile-navigations-questions {
+    width: 100%;
+    text-align: center;
+}
+
+.edit-user-profile-navigations-questions a {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #3492C8;
+    transition: .3s;
+}
+
+.edit-user-profile-navigations-questions a:hover {
+    color: #2f7ba6;
+    transition: .3s;
+}
+
+.edit-user-profile-navigations-questions a:last-child {
+    margin-bottom: 0px;
+}
+
+.edit-user-profile-navigations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.edit-user-profile-questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.edit-user-profile-navigations-questions-h3 {
+    margin-bottom: 10px;
+}
+
+.edit-user-profile-navigations-questions-h3  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.edit-user-profile-informations {
+    width: 1140px;
+}
+
+.edit-user-profile-edit-name {
+    width: 740px;
+    margin-bottom: 10px;
+}
+
+.edit-user-profile-edit-link {
+    width: 740px;
+    margin-bottom: 10px;
+}
+
+.edit-user-profile-edit-description {
+    width: 740px;
+    margin-bottom: 10px;
+}
+
+
+.edit-user-profile-edit-name label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.edit-user-profile-edit-name small {
+    display: flex;
+    margin-top: 5px;
+}
+
+.edit-user-profile-edit-name input {
+    width: 740px;
+    height: 40px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #3492C8;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+.edit-user-profile-edit-link label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.edit-user-profile-edit-link small {
+    display: flex;
+    margin-top: 5px;
+}
+
+.edit-user-profile-edit-link input {
+    width: 740px;
+    height: 40px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #3492C8;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+.edit-user-profile-edit-description label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.edit-user-profile-edit-description small {
+    display: flex;
+    margin-top: 5px;
+}
+
+.edit-user-profile-edit-description textarea {
+    max-width: 740px;
+    min-width: 740px;
+    max-height: 180px;
+    min-height: 180px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #3492C8;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.edit-user-profile-messengers {
+    width: 740px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.edit-user-profile-messenger {
+    margin-bottom: 10px;
+}
+
+.edit-user-profile-messenger label {
+    display: flex;
+}
+
+.edit-user-profile-messenger input {
+    width: 360px;
+    height: 40px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #3492C8;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+.edit-user-profile-save-input {
+    width: 740px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.edit-user-profile-save-input input {
+    width: 360px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #3492C8;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+
+.edit-user-profile-save-input input:hover {
+    background-color: #2f7ba6;
+    transition: .3s;
+}
+
+/**/
 
 @media screen and (max-width: 1850px) {
     .container {
