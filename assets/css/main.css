@@ -2315,6 +2315,7 @@ i.icon-up-open-big:after {
 
 .edit-user-profile-messenger label {
     display: flex;
+    margin-bottom: 5px;
 }
 
 .edit-user-profile-messenger input {
