@@ -2023,6 +2023,7 @@ i.icon-up-open-big:after {
 
 .user-profile-info-block img {
     width: 320px;
+    height: 320px;
     border-radius: 50px;
     margin-bottom: 15px;
 }
@@ -2842,7 +2843,7 @@ i.icon-up-open-big:after {
     }
 
     .dropdown-profile:hover .dropdown-profile-content {
-        display: none;
+        display: block;
     }
 
     .dropdown-profile:checked .dropdown-profile-content {
