@@ -121,8 +121,9 @@ li {
 /*left menu*/
 
 .left-menu {
-    /*width: 360px;*/
-    height: auto;
+    overflow: auto;
+    height: 100%;
+    width: 320px;
 }
 
 .menu {
@@ -227,8 +228,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    position: absolute;
-    bottom: 20px;
+    margin-top: 30px;
 }
 
 .site-information p {
@@ -411,6 +411,7 @@ li {
     height: 50px;
     margin-right: 15px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .profile p {
@@ -562,6 +563,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .ad-block-text {
@@ -1108,6 +1110,10 @@ li {
 
 .user-profile-name-text svg{
     margin-left: 10px;
+}
+
+.user-collections-block {
+    width: 1500px;
 }
 
 .author-post-image {
@@ -2026,6 +2032,7 @@ i.icon-up-open-big:after {
     height: 320px;
     border-radius: 50px;
     margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .user-profile-info-name-h3 {
@@ -2254,6 +2261,7 @@ i.icon-up-open-big:after {
     height: 320px;
     margin-bottom: 20px;
     border-radius: 50px;
+    object-fit: cover;
 }
 
 .edit-user-profile-input-load-photo {
@@ -2262,7 +2270,7 @@ i.icon-up-open-big:after {
     justify-content: center;
 }
 
-.edit-user-profile-input-load-photo input {
+.edit-user-profile-input-load-photo a {
     width: 325px;
     height: 45px;
     border-radius: 10px;
@@ -2273,9 +2281,12 @@ i.icon-up-open-big:after {
     font-weight: 400;
     line-height: 24px;
     transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.edit-user-profile-input-load-photo input:hover {
+.edit-user-profile-input-load-photo a:hover {
     background-color: #2f7ba6;
     transition: .3s;
 }
@@ -2478,7 +2489,18 @@ i.icon-up-open-big:after {
 @media screen and (max-width: 1850px) {
     .container {
         justify-content: center;
+    }
 
+    .edit-user-profile {
+        width: 1120px;
+    }
+
+    .edit-user-profile-informations {
+        width: 760px;
+    }
+
+    .user-collections-block {
+        width: 1120px;
     }
 
     .content {
@@ -2600,42 +2622,91 @@ i.icon-up-open-big:after {
 }
 
 
-@media screen and (max-height: 920px) {
+/*@media screen and (max-height: 920px) {*/
 
-    .categories>nav {
-        margin-bottom: 20px;
-    }
+/*    .categories>nav {*/
+/*        margin-bottom: 20px;*/
+/*    }*/
 
-    .block-image-input-submit {
-        margin-bottom: 50px;
-    }
+/*    .block-image-input-submit {*/
+/*        margin-bottom: 50px;*/
+/*    }*/
 
-    .dropdown-label:after {
-        margin-left: 10px;
-        content: url("/assets/images/svg/chevron-down.svg");
-        color: #fff;
-    }
+/*    .dropdown-label:after {*/
+/*        margin-left: 10px;*/
+/*        content: url("/assets/images/svg/chevron-down.svg");*/
+/*        color: #fff;*/
+/*    }*/
 
-    .categories nav label {
-        cursor: pointer;
-    }
+/*    .categories nav label {*/
+/*        cursor: pointer;*/
+/*    }*/
 
-    .categories nav label{
-        display: inline-block;
-    }
+/*    .categories nav label{*/
+/*        display: inline-block;*/
+/*    }*/
 
-    .categories nav > ul {
-        display: none;
-    }
+/*    .categories nav > ul {*/
+/*        display: none;*/
+/*    }*/
 
-    input[type="checkbox"]:checked ~ label + ul {
-        display: block;
-    }
-}
+/*    input[type="checkbox"]:checked ~ label + ul {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
 
 @media screen and (max-width: 1480px) {
     .container {
         justify-content: center;
+    }
+
+    .edit-user-profile {
+        width: 740px;
+    }
+
+    .edit-user-profile-informations {
+        width: 360px;
+    }
+
+    .edit-user-profile-edit-name {
+        width: 360px;
+    }
+
+    .edit-user-profile-edit-name input {
+        width: 360px;
+    }
+
+    .edit-user-profile-edit-link {
+        width: 360px;
+    }
+
+    .edit-user-profile-edit-link input {
+        width: 360px;
+    }
+
+    .edit-user-profile-edit-description {
+        width: 360px;
+    }
+
+    .edit-user-profile-edit-description textarea {
+        max-width: 360px;
+        min-width: 360px;
+        max-height: 180px;
+        min-height: 180px;
+    }
+
+    .edit-user-profile-save-input {
+        width: 360px;
+    }
+
+
+
+    .edit-user-profile-messengers {
+        width: 360px;
+    }
+
+    .user-collections-block {
+        width: 740px;
     }
 
     .user-profile {
@@ -2779,6 +2850,10 @@ i.icon-up-open-big:after {
         flex-wrap: wrap;
     }
 
+    .categories {
+        margin-top: 0px;
+    }
+
     .content {
         width: 740px;
     }
@@ -2796,13 +2871,15 @@ i.icon-up-open-big:after {
     }
 
     .header-right {
-        /*margin-bottom: 15px;*/
-    }
-
-    .header-right {
         width: 380px;
         display: flex;
         align-items: center;
+        margin-top: -5px;
+        margin-bottom: auto;
+    }
+
+    .search-input {
+        margin-top: 0px;
     }
 
     .images {
@@ -2913,6 +2990,24 @@ i.icon-up-open-big:after {
     .container {
         width: 360px;
         justify-content: center;
+    }
+
+    .edit-user-profile {
+        width: 360px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .edit-user-profile-image-block {
+        margin-bottom: 30px;
+    }
+
+    .edit-user-profile-save-input {
+        margin-bottom: 30px;
+    }
+
+    .user-collections-block {
+        width: 360px;
     }
 
     .profile p {
@@ -3098,11 +3193,8 @@ i.icon-up-open-big:after {
     }
 
     .header-main {
-        margin-top: 30px;
-        /*flex-direction: column-reverse;*/
         display: grid;
         width: 360px;
-        /*margin-bottom: 70px;*/
     }
 
     .tags {
@@ -3155,6 +3247,69 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .edit-user-profile {
+        width: 300px;
+    }
+
+    .edit-user-profile-informations {
+        width: 300px;
+    }
+
+    .edit-user-profile-edit-name {
+        width: 300px;
+    }
+
+    .edit-user-profile-edit-name input {
+        width: 300px;
+    }
+
+    .edit-user-profile-edit-link {
+        width: 300px;
+    }
+
+    .edit-user-profile-edit-link input {
+        width: 300px;
+    }
+
+    .edit-user-profile-edit-description {
+        width: 300px;
+    }
+
+    .edit-user-profile-edit-description textarea {
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 180px;
+        min-height: 180px;
+    }
+
+    .edit-user-profile-save-input {
+        width: 300px;
+    }
+
+    .edit-user-profile-messenger {
+        width: 300px;
+    }
+
+    .edit-user-profile-messenger input {
+        width: 300px;
+    }
+
+    .edit-user-profile-questions {
+        width: 300px;
+    }
+
+    .edit-user-profile-image-block {
+        width: 300px;
+    }
+
+    .edit-user-profile-input-load-photo a {
+        width: 300px;
+    }
+
+    .user-collections-block {
+        width: 300px;
     }
 
     .profile p {
@@ -3395,10 +3550,8 @@ i.icon-up-open-big:after {
     }
 
     .header-main {
-        margin-top: 30px;
         flex-direction: column-reverse;
         width: 300px;
-        /*margin-bottom: 70px;*/
     }
 
     .language {
