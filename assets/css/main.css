@@ -7,6 +7,24 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #939393;
+    border-radius: 8px;
+    border: 3px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+}
+
 body {
     background-color: #1e1e1e;
     color: #fff;
@@ -483,8 +501,6 @@ li {
     width: 1500px;
 }
 
-
-
 .user-images-panel {
     display: flex;
     align-items: center;
@@ -492,10 +508,81 @@ li {
     width: 100%;
 }
 
-.user-images-panel a {
+.createcollection {
+    display: none;
+    background-color: #000000CC;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.createcollection h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.createcollection:target {
+    display: block;
+}
+
+.createcollection>div {
+    width: 670px;
+    height: 255px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    margin: 15% auto;
+    position: relative;
+    padding: 20px;
+}
+
+.user-collections-create-collection {
+    width: 100%;
+}
+
+.user-collections-create-collection label {
+    margin-bottom: 5px;
+}
+
+.user-collections-create-collection input {
+    width: 630px;
+    height: 40px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 0px 15px 0px 15px;
+    outline: none;
+    border: 1px solid #3492C8;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.user-collections-create-collection-apply button {
+    width: 75px;
+    height: 45px;
+    background-color: #3492C8;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    transition: .3s;
+}
+
+.user-collections-create-collection-apply button:hover {
+    background-color: #3492C8cc;
+    transition: .3s;
+}
+
+.user-images-panel>a {
     color: #fff;
     font-size: 20px;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 .user-images-search {
@@ -534,10 +621,19 @@ li {
     display: flex;
 }
 
+.user-img-search-sort label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
 .user-img-search-sort select {
     outline: none;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
 }
 
 .row-img {
@@ -2732,14 +2828,10 @@ i.icon-up-open-big:after {
         align-items: center;
     }
 
-    .user-images-panel a {
+    .user-images-panel>a {
         color: #fff;
         font-size: 20px;
         margin-right: 40px;
-    }
-
-    .user-images-search select {
-        margin-right: 20px;
     }
 
     .feedback-block {
@@ -2850,6 +2942,11 @@ i.icon-up-open-big:after {
         flex-wrap: wrap;
     }
 
+    .logo {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
     .categories {
         margin-top: 0px;
     }
@@ -2898,7 +2995,7 @@ i.icon-up-open-big:after {
         width: 740px;
     }
 
-    .user-images-panel a {
+    .user-images-panel>a {
         margin-bottom: 20px;
         margin-right: 0;
     }
@@ -2990,6 +3087,14 @@ i.icon-up-open-big:after {
     .container {
         width: 360px;
         justify-content: center;
+    }
+
+    .createcollection>div {
+        width: 360px;
+    }
+
+    .user-collections-create-collection input {
+        width: 310px;
     }
 
     .edit-user-profile {
@@ -3144,7 +3249,7 @@ i.icon-up-open-big:after {
     }
 
     .categories {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-left: 0px;
         /*text-align: center;*/
         display: grid;
@@ -3209,7 +3314,7 @@ i.icon-up-open-big:after {
         width: 360px;
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-bottom: 0px;
     }
 
@@ -3247,6 +3352,14 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .createcollection>div {
+        width: 300px;
+    }
+
+    .user-collections-create-collection input {
+        width: 260px;
     }
 
     .edit-user-profile {
