@@ -167,10 +167,6 @@ li {
     color: #FFFFFF;
 }
 
-.categories ul {
-    width: 200px;
-}
-
 .categories label{
 
     font-style: normal;
@@ -2716,40 +2712,6 @@ i.icon-up-open-big:after {
     }
 }
 
-
-/*@media screen and (max-height: 920px) {*/
-
-/*    .categories>nav {*/
-/*        margin-bottom: 20px;*/
-/*    }*/
-
-/*    .block-image-input-submit {*/
-/*        margin-bottom: 50px;*/
-/*    }*/
-
-/*    .dropdown-label:after {*/
-/*        margin-left: 10px;*/
-/*        content: url("/assets/images/svg/chevron-down.svg");*/
-/*        color: #fff;*/
-/*    }*/
-
-/*    .categories nav label {*/
-/*        cursor: pointer;*/
-/*    }*/
-
-/*    .categories nav label{*/
-/*        display: inline-block;*/
-/*    }*/
-
-/*    .categories nav > ul {*/
-/*        display: none;*/
-/*    }*/
-
-/*    input[type="checkbox"]:checked ~ label + ul {*/
-/*        display: block;*/
-/*    }*/
-/*}*/
-
 @media screen and (max-width: 1480px) {
     .container {
         justify-content: center;
@@ -2935,10 +2897,44 @@ i.icon-up-open-big:after {
     }
 }
 
+@media screen and (max-height: 920px) {
+
+}
+
 @media screen and (max-width: 1105px) {
     .container {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .categories>nav {
+        margin-bottom: 20px;
+    }
+
+    .block-image-input-submit {
+        margin-bottom: 50px;
+    }
+
+    .dropdown-label:after {
+        margin-left: 10px;
+        content: url("/assets/images/svg/chevron-down.svg");
+        color: #fff;
+    }
+
+    .categories nav label {
+        cursor: pointer;
+    }
+
+    .categories nav label{
+        display: inline-block;
+    }
+
+    .categories nav > ul {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
     }
 
     .logo {
@@ -3045,7 +3041,7 @@ i.icon-up-open-big:after {
     }
 
     .categ-row {
-        width: 250px;
+        width: 300px;
     }
 
     .dropdown-label:after {
@@ -3072,7 +3068,7 @@ i.icon-up-open-big:after {
     }
 
     .left-menu {
-        width: 500px;
+        width: 600px;
         height: 100%;
         margin: 0 auto;
         display: flex;
