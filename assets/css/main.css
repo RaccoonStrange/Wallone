@@ -98,9 +98,12 @@ li {
 /*-----logo-----*/
 
 .logo {
-    margin: 30px 20px 40px 0;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 300px;
+    height: 110px;
+    background-color: #1e1e1e;
 }
 
 .logo img{
@@ -154,9 +157,7 @@ li {
 
 .categories {
     width: 300px;
-    margin-top: 30px;
-
-
+    margin-top: 120px;
 }
 
 .categories a {
@@ -168,7 +169,6 @@ li {
 }
 
 .categories label{
-
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -351,7 +351,7 @@ li {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    width: 1500px;
+    width: 100%;
 }
 
 .tags a {
@@ -1533,8 +1533,104 @@ i.icon-up-open-big:after {
 }
 
 .h1-about-us {
-    margin-top: 20px;
+    margin-top: 25px;
     text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-us-images-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.about-us-image {
+    width: 350px;
+    height: 420px;
+    background-color: #000;
+    border-radius: 10px;
+    /*position: relative;*/
+}
+
+.about-us-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.about-us-info {
+    display: none;
+    width: 1000px;
+    height: 260px;
+    background-color: #2b2b2bdd;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 99999;
+    margin: 20% auto;
+}
+
+.about-us-info-first {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 350px;
+}
+
+.about-us-info-second {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 350px;
+}
+
+.about-us-info-third {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 350px;
+}
+
+.about-us-info-fourth {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 350px;
+}
+
+
+.about-us-info p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+.about-us-info p:last-child {
+    margin-bottom: 0px;
+}
+
+.about-us-info a {
+    color: #3492c8;
+}
+
+.about-us-info a:hover {
+    color: #3492c8cc;
+}
+
+.about-us-image:hover .about-us-info{
+    display: block;
+}
+
+.about-us-image img:hover {
+    opacity: .4;
+    transition: .3s;
 }
 
 /*-----*/
@@ -2334,9 +2430,6 @@ i.icon-up-open-big:after {
 
 .edit-user-profile-image-block {
     width: 360px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .edit-user-profile-image {
@@ -2344,13 +2437,12 @@ i.icon-up-open-big:after {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .edit-user-profile-image img {
     width: 320px;
     height: 320px;
-    margin-bottom: 20px;
     border-radius: 50px;
     object-fit: cover;
 }
@@ -2359,6 +2451,8 @@ i.icon-up-open-big:after {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 45px;
+    margin-bottom: 30px;
 }
 
 .edit-user-profile-input-load-photo a {
@@ -2582,6 +2676,34 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .feedback-block {
+        width: 1120px;
+    }
+
+    .user-profile {
+        width: 1120px;
+    }
+
+    .user-profile-images-block {
+        width: 740px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .about-us-block {
+        width: 1120px;
+    }
+
+    .about-us-image {
+        width: 540px;
+    }
+
+    .about-us-images-block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+    }
+
     .edit-user-profile {
         width: 1120px;
     }
@@ -2717,6 +2839,31 @@ i.icon-up-open-big:after {
         justify-content: center;
     }
 
+    .feedback-block {
+        width: 740px;
+    }
+
+    .about-us-block {
+        width: 740px;
+    }
+
+    .about-us-image {
+        width: 360px;
+    }
+
+    .about-us-images-block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+
+    .about-us-info {
+        width: 740px;
+        height: 280px;
+        top: 400px;
+        left: 0;
+    }
+
     .edit-user-profile {
         width: 740px;
     }
@@ -2756,8 +2903,6 @@ i.icon-up-open-big:after {
         width: 360px;
     }
 
-
-
     .edit-user-profile-messengers {
         width: 360px;
     }
@@ -2793,10 +2938,6 @@ i.icon-up-open-big:after {
         color: #fff;
         font-size: 20px;
         margin-right: 40px;
-    }
-
-    .feedback-block {
-        width: 1120px;
     }
 
     .images {
@@ -2897,10 +3038,6 @@ i.icon-up-open-big:after {
     }
 }
 
-@media screen and (max-height: 920px) {
-
-}
-
 @media screen and (max-width: 1105px) {
     .container {
         justify-content: center;
@@ -2938,8 +3075,10 @@ i.icon-up-open-big:after {
     }
 
     .logo {
+        position: relative;
         margin-top: 25px;
         margin-bottom: 20px;
+        width: 150px;
     }
 
     .categories {
@@ -3041,7 +3180,7 @@ i.icon-up-open-big:after {
     }
 
     .categ-row {
-        width: 300px;
+        width: 250px;
     }
 
     .dropdown-label:after {
@@ -3082,6 +3221,32 @@ i.icon-up-open-big:after {
     .container {
         width: 360px;
         justify-content: center;
+    }
+
+    .about-us-block {
+        width: 360px;
+    }
+
+    .about-us-image {
+        width: 360px;
+        position: relative;
+    }
+
+    .about-us-images-block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 0;
+    }
+
+    .about-us-info {
+        display: block;
+        width: 360px;
+        height: 420px;
+        top: -72px;
+    }
+
+    .about-us-info p {
+        font-size: 14px;
     }
 
     .createcollection>div {
@@ -3347,6 +3512,37 @@ i.icon-up-open-big:after {
     .container {
         width: 300px;
         justify-content: center;
+    }
+
+    .edit-user-profile-messengers {
+        width: 300px;
+    }
+
+    .about-us-block {
+        width: 300px;
+    }
+
+    .about-us-image {
+        width: 300px;
+        height: 420px;
+        position: relative;
+    }
+
+    .about-us-images-block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .about-us-info {
+        display: block;
+        width: 300px;
+        height: 420px;
+        top: -60px;
+        padding: 10px;
+    }
+
+    .about-us-info p {
+        margin-bottom: 10px;
     }
 
     .createcollection>div {
